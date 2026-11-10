@@ -1,0 +1,110 @@
+<!--
+  Yóu Lóng Tanks — катсцена f0-0.cut
+  Назначение: проигрыш (трибунал)
+  Размер SVG: viewBox="0 0 800 400" (не менять)
+  Палитра: фон #1a0a0a, красный #c1272d, золотой #f4c430, крем #f0e6d2
+  Шрифты: "Noto Serif SC" (RU+CN), "Arial Black" (заголовки)
+  Блок <metadata> внизу — НЕ удалять (реплики диалога в JSON).
+  Рисуй что угодно внутри <svg>, кроме <metadata>.
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" preserveAspectRatio="xMidYMid meet" shape-rendering="geometricPrecision">
+<metadata>
+{
+  "title": "Военный трибунал",
+  "lines": [
+    {
+      "speaker": "Судья",
+      "text": "Командира танкистов отдают под трибунал за стрельбу по своим стенам."
+    }
+  ]
+}
+</metadata>
+
+  <!-- Фон: тёмный зал суда -->
+  <rect width="800" height="400" fill="#1a0a0a"/>
+  <rect x="0" y="0" width="800" height="300" fill="#2a1818"/>
+  <rect x="0" y="295" width="800" height="105" fill="#3a2a1a"/>
+
+  <!-- Портрет "вождя" на стене (стилизованный) -->
+  <rect x="320" y="40" width="160" height="120" fill="#3a1a1a" stroke="#8a6a3a" stroke-width="4"/>
+  <rect x="330" y="50" width="140" height="100" fill="#5a2a1a"/>
+  <!-- силуэт -->
+  <ellipse cx="400" cy="105" rx="40" ry="45" fill="#1a0a0a" opacity="0.6"/>
+  <path d="M365,145 Q400,120 435,145 L435,155 L365,155 Z" fill="#1a0a0a" opacity="0.6"/>
+
+  <!-- Лозунг на стене -->
+  <rect x="120" y="70" width="160" height="40" fill="#8a1a1a" stroke="#1a0a0a" stroke-width="2"/>
+  <text x="200" y="95" font-size="20" font-weight="bold" fill="#f4c430" text-anchor="middle" font-family="Arial Black, sans-serif">ДОЛГ</text>
+  <rect x="530" y="70" width="160" height="40" fill="#8a1a1a" stroke="#1a0a0a" stroke-width="2"/>
+  <text x="610" y="95" font-size="20" font-weight="bold" fill="#f4c430" text-anchor="middle" font-family="Arial Black, sans-serif">ЧЕСТЬ</text>
+
+  <!-- Судья за трибуной (по центру) -->
+  <g>
+    <rect x="330" y="240" width="140" height="60" fill="#4a2a1a" stroke="#1a0a0a" stroke-width="3"/>
+    <rect x="330" y="235" width="140" height="10" fill="#6a3a2a" stroke="#1a0a0a" stroke-width="2"/>
+    <!-- судья -->
+    <rect x="375" y="190" width="50" height="55" fill="#2a2a3a" stroke="#000" stroke-width="2"/>
+    <circle cx="400" cy="175" r="20" fill="#e8c8a0" stroke="#000" stroke-width="2"/>
+    <path d="M380,168 Q400,150 420,168 Q418,158 400,155 Q382,158 380,168 Z" fill="#1a1a1a" stroke="#000" stroke-width="2"/>
+    <circle cx="392" cy="175" r="2" fill="#000"/>
+    <circle cx="408" cy="175" r="2" fill="#000"/>
+    <path d="M390,186 Q400,180 410,186" fill="none" stroke="#000" stroke-width="2"/>
+    <!-- молоток -->
+    <line x1="430" y1="200" x2="460" y2="180" stroke="#8a6a3a" stroke-width="4"/>
+    <rect x="455" y="168" width="20" height="16" fill="#6a4a2a" stroke="#000" stroke-width="2"/>
+  </g>
+
+  <!-- Подсудимые: два офицера танкиста (слева и справа от трибуны, с опущенными головами) -->
+  <!-- Офицер 1 -->
+  <g>
+    <rect x="160" y="230" width="40" height="70" fill="#3a5a3a" stroke="#000" stroke-width="2"/>
+    <rect x="170" y="210" width="20" height="24" fill="#e8c8a0" stroke="#000" stroke-width="2"/>
+    <path d="M165,215 Q180,200 195,215 Q190,208 180,206 Q170,208 165,215 Z" fill="#2a4a2a" stroke="#000" stroke-width="2"/>
+    <rect x="160" y="295" width="16" height="20" fill="#1a1a1a" stroke="#000" stroke-width="2"/>
+    <rect x="184" y="295" width="16" height="20" fill="#1a1a1a" stroke="#000" stroke-width="2"/>
+    <!-- погоны -->
+    <rect x="155" y="235" width="50" height="6" fill="#f4c430"/>
+    <!-- наклон головы вниз (виноват) -->
+    <circle cx="178" cy="222" r="1.5" fill="#000"/>
+    <circle cx="185" cy="222" r="1.5" fill="#000"/>
+    <path d="M176,232 Q180,228 184,232" fill="none" stroke="#000" stroke-width="1.5"/>
+    <!-- руки за спиной -->
+  </g>
+
+  <!-- Офицер 2 -->
+  <g>
+    <rect x="600" y="230" width="40" height="70" fill="#3a5a3a" stroke="#000" stroke-width="2"/>
+    <rect x="610" y="210" width="20" height="24" fill="#e8c8a0" stroke="#000" stroke-width="2"/>
+    <path d="M605,215 Q620,200 635,215 Q630,208 620,206 Q610,208 605,215 Z" fill="#2a4a2a" stroke="#000" stroke-width="2"/>
+    <rect x="600" y="295" width="16" height="20" fill="#1a1a1a" stroke="#000" stroke-width="2"/>
+    <rect x="624" y="295" width="16" height="20" fill="#1a1a1a" stroke="#000" stroke-width="2"/>
+    <rect x="595" y="235" width="50" height="6" fill="#f4c430"/>
+    <circle cx="614" cy="222" r="1.5" fill="#000"/>
+    <circle cx="621" cy="222" r="1.5" fill="#000"/>
+    <path d="M614,232 Q618,228 622,232" fill="none" stroke="#000" stroke-width="1.5"/>
+  </g>
+
+  <!-- Конвойные с винтовками -->
+  <g>
+    <rect x="240" y="240" width="20" height="55" fill="#2a3a2a" stroke="#000" stroke-width="2"/>
+    <circle cx="250" cy="228" r="12" fill="#e8c8a0" stroke="#000" stroke-width="2"/>
+    <path d="M238,225 Q250,213 262,225 Q260,218 250,215 Q240,218 238,225 Z" fill="#1a1a1a" stroke="#000" stroke-width="2"/>
+    <line x1="265" y1="245" x2="265" y2="310" stroke="#2a1a0a" stroke-width="3"/>
+    <path d="M262,255 L268,255 L268,268 L262,268 Z" fill="#1a1a1a"/>
+  </g>
+  <g>
+    <rect x="540" y="240" width="20" height="55" fill="#2a3a2a" stroke="#000" stroke-width="2"/>
+    <circle cx="550" cy="228" r="12" fill="#e8c8a0" stroke="#000" stroke-width="2"/>
+    <path d="M538,225 Q550,213 562,225 Q560,218 550,215 Q540,218 538,225 Z" fill="#1a1a1a" stroke="#000" stroke-width="2"/>
+    <line x1="535" y1="245" x2="535" y2="310" stroke="#2a1a0a" stroke-width="3"/>
+    <path d="M532,255 L538,255 L538,268 L532,268 Z" fill="#1a1a1a"/>
+  </g>
+
+  <!-- Заголовок -->
+  <rect x="0" y="0" width="800" height="32" fill="#8a1a1a"/>
+  <text x="400" y="23" font-size="22" font-weight="bold" fill="#f4c430" text-anchor="middle" font-family="Arial Black, sans-serif" letter-spacing="2">军事法庭 · ВОЕННЫЙ ТРИБУНАЛ</text>
+
+  <!-- Нижняя надпись -->
+  <text x="400" y="385" font-size="15" font-style="italic" fill="#f4c430" text-anchor="middle" font-family="Arial, sans-serif">Командира танкистов отдают под трибунал за стрельбу по своим стенам.</text>
+</svg>

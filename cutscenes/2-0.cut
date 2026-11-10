@@ -1,0 +1,136 @@
+<!--
+  Yóu Lóng Tanks — катсцена 2-0.cut
+  Назначение: перед уровнем 2
+  Размер SVG: viewBox="0 0 800 400" (не менять)
+  Палитра: фон #1a0a0a, красный #c1272d, золотой #f4c430, крем #f0e6d2
+  Шрифты: "Noto Serif SC" (RU+CN), "Arial Black" (заголовки)
+  Блок <metadata> внизу — НЕ удалять (реплики диалога в JSON).
+  Рисуй что угодно внутри <svg>, кроме <metadata>.
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" preserveAspectRatio="xMidYMid meet" shape-rendering="geometricPrecision">
+<metadata>
+{
+  "title": "Площадь. Студенты",
+  "lines": [
+    {
+      "speaker": "指挥官",
+      "text": "Студенты собираются на площади. Плакаты, мегафоны."
+    },
+    {
+      "speaker": "学生 (Вася)",
+      "text": "Мы не сдадимся!"
+    }
+  ]
+}
+</metadata>
+
+  <rect width="800" height="400" fill="#0a0808"/>
+  <rect x="0" y="0" width="800" height="240" fill="#1a0a12"/>
+  <rect x="0" y="200" width="800" height="40" fill="#2a1a1a"/>
+  <rect x="0" y="235" width="800" height="165" fill="#2a1a10"/>
+  <rect x="0" y="235" width="800" height="3" fill="#5a3a2a"/>
+  <circle cx="680" cy="60" r="38" fill="#e8c060" stroke="#000" stroke-width="3"/>
+  <circle cx="695" cy="55" r="30" fill="#1a0a12" opacity="0.4"/>
+  <circle cx="120" cy="40" r="2" fill="#fff" opacity="0.6"/>
+  <circle cx="320" cy="55" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="550" cy="30" r="2" fill="#fff" opacity="0.7"/>
+
+  <!-- Студент-оратор с мегафоном на ящике -->
+  <g id="orator">
+    <rect x="360" y="320" width="60" height="40" fill="#8a5a2a" stroke="#000" stroke-width="3"/>
+    <path d="M355,320 L425,320 M360,330 L420,330" stroke="#5a3a1a" stroke-width="2"/>
+    <path d="M375,290 L400,290 L400,320 L375,320 Z" fill="#2a2a3a" stroke="#000" stroke-width="2.5"/>
+    <path d="M355,250 L420,250 L428,295 L348,295 Z" fill="#f0e6d2" stroke="#000" stroke-width="3"/>
+    <path d="M378,250 L390,275 L390,300 L374,293 Z" fill="#f0e6d2" stroke="#000" stroke-width="1.5"/>
+    <path d="M400,250 L388,275 L388,300 L404,293 Z" fill="#f0e6d2" stroke="#000" stroke-width="1.5"/>
+    <path d="M386,250 L398,250 L394,285 L390,292 L386,285 Z" fill="#c1272d" stroke="#000" stroke-width="1.5"/>
+    <!-- Голова -->
+    <ellipse cx="388" cy="215" rx="30" ry="34" fill="#e8c8a0" stroke="#000" stroke-width="3"/>
+    <path d="M363,207 Q360,190 368,181 Q365,171 375,171 Q379,161 389,168 Q395,159 404,168 Q411,165 415,178 Q423,185 420,197 Q421,211 412,215 L363,215 Z" fill="#1a0f0a" stroke="#000" stroke-width="2.5"/>
+    <circle cx="377" cy="215" r="9" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="2"/>
+    <circle cx="401" cy="215" r="9" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="2"/>
+    <ellipse cx="377" cy="217" rx="5" ry="6" fill="#fff" stroke="#000" stroke-width="1.5"/>
+    <ellipse cx="401" cy="217" rx="5" ry="6" fill="#fff" stroke="#000" stroke-width="1.5"/>
+    <circle cx="378" cy="217" r="1.5" fill="#1a0a0a"/>
+    <circle cx="402" cy="217" r="1.5" fill="#1a0a0a"/>
+    <ellipse cx="388" cy="235" rx="7" ry="9" fill="#4a0a0a" stroke="#000" stroke-width="1.5"/>
+    <!-- Мегафон -->
+    <path d="M420,245 L470,230 L480,250 L430,265 Z" fill="#c1272d" stroke="#000" stroke-width="2.5"/>
+    <path d="M465,232 L475,235" stroke="#000" stroke-width="2"/>
+    <text x="475" y="225" font-size="18" font-weight="bold" fill="#f4c430" stroke="#000" stroke-width="1" font-family="Arial Black">ウォー!</text>
+    <!-- Рука поднята -->
+    <path d="M355,260 L315,220 L305,230 L345,270 Z" fill="#f0e6d2" stroke="#000" stroke-width="2.5"/>
+    <ellipse cx="313" cy="225" rx="10" ry="9" fill="#e8c8a0" stroke="#000" stroke-width="2"/>
+  </g>
+
+  <!-- Толпа с плакатами (слева) -->
+  <g>
+    <!-- Плакат 1 -->
+    <rect x="60" y="200" width="70" height="50" fill="#f0e6d2" stroke="#000" stroke-width="2"/>
+    <text x="95" y="222" font-size="14" font-weight="bold" fill="#c1272d" text-anchor="middle" font-family="Arial Black">自由</text>
+    <text x="95" y="238" font-size="11" font-weight="bold" fill="#c1272d" text-anchor="middle" font-family="Arial">ДАЕШЬ!</text>
+    <path d="M93,250 L93,320" stroke="#8a5a2a" stroke-width="3"/>
+    <ellipse cx="93" cy="295" rx="14" ry="20" fill="#f0e6d2" stroke="#000" stroke-width="2"/>
+    <ellipse cx="93" cy="270" rx="16" ry="19" fill="#e8c8a0" stroke="#000" stroke-width="2"/>
+    <path d="M80,265 Q77,252 84,245 Q80,238 88,240 Q92,230 100,240 Q107,236 110,245 Q116,251 108,262 L80,262 Z" fill="#1a0f0a" stroke="#000" stroke-width="1.5"/>
+    <circle cx="87" cy="270" r="4" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="1"/>
+    <circle cx="99" cy="270" r="4" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="1"/>
+    <circle cx="88" cy="271" r="1" fill="#1a0a0a"/>
+    <circle cx="100" cy="271" r="1" fill="#1a0a0a"/>
+    
+    <!-- Плакат 2 -->
+    <rect x="160" y="185" width="80" height="55" fill="#c1272d" stroke="#000" stroke-width="2"/>
+    <text x="200" y="210" font-size="14" font-weight="bold" fill="#f4c430" text-anchor="middle" font-family="Arial Black">不退</text>
+    <text x="200" y="228" font-size="11" font-weight="bold" fill="#f4c430" text-anchor="middle" font-family="Arial">НЕ СДАДИМ!</text>
+    <path d="M198,240 L198,320" stroke="#8a5a2a" stroke-width="3"/>
+    <ellipse cx="198" cy="295" rx="14" ry="20" fill="#f0e6d2" stroke="#000" stroke-width="2"/>
+    <ellipse cx="198" cy="270" rx="16" ry="19" fill="#e8c8a0" stroke="#000" stroke-width="2"/>
+    <path d="M185,265 Q182,252 189,245 Q185,238 193,240 Q197,230 205,240 Q212,236 215,245 Q221,251 213,262 L185,262 Z" fill="#1a0f0a" stroke="#000" stroke-width="1.5"/>
+    <circle cx="192" cy="270" r="4" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="1"/>
+    <circle cx="204" cy="270" r="4" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="1"/>
+    <circle cx="193" cy="271" r="1" fill="#1a0a0a"/>
+    <circle cx="205" cy="271" r="1" fill="#1a0a0a"/>
+
+    <!-- Просто студенты -->
+    <ellipse cx="270" cy="320" rx="20" ry="6" fill="#0a0a0a" opacity="0.5"/>
+    <path d="M260,270 L275,270 L275,320 L255,322 Z" fill="#2a2a3a" stroke="#000" stroke-width="2"/>
+    <path d="M280,270 L295,270 L302,318 L282,322 Z" fill="#2a2a3a" stroke="#000" stroke-width="2"/>
+    <path d="M250,230 L305,230 L315,275 L245,275 Z" fill="#f0e6d2" stroke="#000" stroke-width="2"/>
+    <ellipse cx="278" cy="205" rx="26" ry="30" fill="#e8c8a0" stroke="#000" stroke-width="2.5"/>
+    <path d="M255,197 Q253,183 260,176 Q257,168 264,170 Q267,160 275,168 Q281,162 287,170 Q293,168 296,178 Q302,185 296,195 L255,195 Z" fill="#1a0f0a" stroke="#000" stroke-width="2"/>
+    <circle cx="266" cy="205" r="7" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="1.5"/>
+    <circle cx="288" cy="205" r="7" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="1.5"/>
+    <circle cx="267" cy="206" r="1.5" fill="#1a0a0a"/>
+    <circle cx="289" cy="206" r="1.5" fill="#1a0a0a"/>
+    <!-- Рука с кулаком -->
+    <path d="M245,240 L225,215 L220,225 L240,250 Z" fill="#f0e6d2" stroke="#000" stroke-width="2"/>
+    <circle cx="222" cy="220" r="7" fill="#e8c8a0" stroke="#000" stroke-width="1.5"/>
+  </g>
+
+  <!-- Танки вдали (силуэты) -->
+  <g opacity="0.55" fill="#1a1a1a" stroke="#000">
+    <path d="M560,290 L680,290 L690,310 L550,310 Z" stroke-width="3"/>
+    <path d="M580,265 L660,265 L680,290 L570,290 Z" stroke-width="3"/>
+    <path d="M590,250 L620,250 L630,265 L585,265 Z" stroke-width="2.5"/>
+    <path d="M640,255 L700,255 L705,265 L640,265 Z" stroke-width="2"/>
+    <circle cx="590" cy="305" r="6" fill="#3a3a3a"/>
+    <circle cx="620" cy="305" r="6" fill="#3a3a3a"/>
+    <circle cx="650" cy="305" r="6" fill="#3a3a3a"/>
+    <circle cx="680" cy="305" r="6" fill="#3a3a3a"/>
+
+    <path d="M720,285 L790,285 L795,305 L715,305 Z" stroke-width="2"/>
+    <path d="M735,260 L775,260 L785,285 L725,285 Z" stroke-width="2"/>
+    <circle cx="730" cy="300" r="5" fill="#3a3a3a"/>
+    <circle cx="755" cy="300" r="5" fill="#3a3a3a"/>
+    <circle cx="780" cy="300" r="5" fill="#3a3a3a"/>
+  </g>
+
+  <!-- Восклицания толпы -->
+  <text x="430" y="180" font-size="20" font-weight="bold" fill="#f4c430" stroke="#000" stroke-width="1" font-family="Arial Black">ダメダ!</text>
+  <text x="220" y="180" font-size="18" font-weight="bold" fill="#f4c430" stroke="#000" stroke-width="1" font-family="Arial Black">ソレッ!</text>
+
+  <!-- Большой слоган снизу -->
+  <rect x="200" y="355" width="400" height="35" fill="#f0e6d2" stroke="#000" stroke-width="2"/>
+  <text x="400" y="380" font-size="22" font-weight="bold" fill="#c1272d" text-anchor="middle" font-family="Arial Black">学生は誰にも負けない!</text>
+</svg>

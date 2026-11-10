@@ -1,0 +1,115 @@
+<!--
+  Yóu Lóng Tanks — катсцена 9-0.cut
+  Назначение: перед уровнем 9
+  Размер SVG: viewBox="0 0 800 400" (не менять)
+  Палитра: фон #1a0a0a, красный #c1272d, золотой #f4c430, крем #f0e6d2
+  Шрифты: "Noto Serif SC" (RU+CN), "Arial Black" (заголовки)
+  Блок <metadata> внизу — НЕ удалять (реплики диалога в JSON).
+  Рисуй что угодно внутри <svg>, кроме <metadata>.
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" preserveAspectRatio="xMidYMid meet" shape-rendering="geometricPrecision">
+<metadata>
+{
+  "title": "Последний рубеж",
+  "lines": [
+    {
+      "speaker": "学生 (Вася)",
+      "text": "Это наш последний рубеж!"
+    },
+    {
+      "speaker": "指挥官",
+      "text": "Сдавайтесь, это бессмысленно."
+    }
+  ]
+}
+</metadata>
+
+  <rect width="800" height="400" fill="#0a0808"/>
+  <rect x="0" y="0" width="800" height="240" fill="#1a0a12"/>
+  <rect x="0" y="200" width="800" height="40" fill="#2a1a1a"/>
+  <rect x="0" y="235" width="800" height="165" fill="#2a1a10"/>
+  <rect x="0" y="235" width="800" height="3" fill="#5a3a2a"/>
+  <circle cx="680" cy="60" r="38" fill="#e8c060" stroke="#000" stroke-width="3"/>
+  <circle cx="695" cy="55" r="30" fill="#1a0a12" opacity="0.4"/>
+  <circle cx="120" cy="40" r="2" fill="#fff" opacity="0.6"/>
+
+  <!-- Рассвет / рассветные лучи (фон) -->
+  <circle cx="400" cy="180" r="120" fill="#c1272d" opacity="0.15"/>
+  <circle cx="400" cy="180" r="80" fill="#e8c060" opacity="0.15"/>
+
+  <!-- Баррикада на переднем плане -->
+  <g id="last_barricade">
+    <rect x="50" y="320" width="700" height="25" fill="#6a3a1a" stroke="#000" stroke-width="4"/>
+    <rect x="60" y="345" width="680" height="12" fill="#4a2a0a" stroke="#000" stroke-width="3"/>
+    <rect x="40" y="305" width="40" height="45" fill="#5a5a5a" stroke="#000" stroke-width="3"/>
+    <ellipse cx="60" cy="305" rx="20" ry="6" fill="#3a3a3a" stroke="#000" stroke-width="2"/>
+    <rect x="720" y="305" width="40" height="45" fill="#5a5a5a" stroke="#000" stroke-width="3"/>
+    <ellipse cx="740" cy="305" rx="20" ry="6" fill="#3a3a3a" stroke="#000" stroke-width="2"/>
+    <!-- Флаг -->
+    <path d="M200,240 L200,320" stroke="#8a5a2a" stroke-width="4"/>
+    <path d="M200,240 L260,250 L200,270 Z" fill="#c1272d" stroke="#000" stroke-width="2"/>
+    <path d="M200,275 L245,285 L200,300 Z" fill="#c1272d" stroke="#000" stroke-width="2"/>
+    <!-- Плакат "ПОСЛЕДНИЙ РУБЕЖ" -->
+    <rect x="320" y="260" width="160" height="35" fill="#c1272d" stroke="#000" stroke-width="3"/>
+    <text x="400" y="284" font-size="16" font-weight="bold" fill="#f4c430" text-anchor="middle" font-family="Arial Black">最後の砲</text>
+    <path d="M320,277 L280,277 M480,277 L520,277" stroke="#8a5a2a" stroke-width="3"/>
+  </g>
+
+  <!-- Студент с флагом -->
+  <g>
+    <ellipse cx="400" cy="370" rx="30" ry="5" fill="#0a0a0a" opacity="0.6"/>
+    <path d="M383,320 L400,320 L400,368 L378,370 Z" fill="#2a2a3a" stroke="#000" stroke-width="2.5"/>
+    <path d="M405,320 L422,320 L428,365 L405,370 Z" fill="#2a2a3a" stroke="#000" stroke-width="2.5"/>
+    <path d="M375,275 L425,275 L435,320 L370,320 Z" fill="#f0e6d2" stroke="#000" stroke-width="2.5"/>
+    <path d="M370,235 L430,235 L440,280 L362,280 Z" fill="#f0e6d2" stroke="#000" stroke-width="3"/>
+    <path d="M395,235 L407,260 L407,290 L388,282 Z" fill="#f0e6d2" stroke="#000" stroke-width="1.5"/>
+    <path d="M420,235 L408,260 L408,290 L431,282 Z" fill="#f0e6d2" stroke="#000" stroke-width="1.5"/>
+    <path d="M404,235 L416,235 L412,275 L408,282 L404,275 Z" fill="#c1272d" stroke="#000" stroke-width="1.5"/>
+    <ellipse cx="400" cy="200" rx="30" ry="34" fill="#e8c8a0" stroke="#000" stroke-width="3"/>
+    <path d="M375,192 Q372,175 380,166 Q377,156 387,156 Q391,146 401,153 Q407,144 416,153 Q423,150 427,163 Q435,170 432,182 Q433,196 424,200 L375,200 Z" fill="#1a0f0a" stroke="#000" stroke-width="2.5"/>
+    <circle cx="388" cy="200" r="9" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="2"/>
+    <circle cx="412" cy="200" r="9" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="2"/>
+    <circle cx="389" cy="201" r="1.5" fill="#1a0a0a"/>
+    <circle cx="413" cy="201" r="1.5" fill="#1a0a0a"/>
+    <ellipse cx="400" cy="220" rx="7" ry="9" fill="#4a0a0a" stroke="#000" stroke-width="1.5"/>
+    <!-- Рука с флагом -->
+    <path d="M362,250 L310,215 L300,225 L345,262 Z" fill="#f0e6d2" stroke="#000" stroke-width="2.5"/>
+    <ellipse cx="308" cy="220" rx="10" ry="9" fill="#e8c8a0" stroke="#000" stroke-width="2"/>
+    <path d="M300,140 L300,225" stroke="#8a5a2a" stroke-width="4"/>
+    <path d="M300,140 L360,150 L300,170 Z" fill="#c1272d" stroke="#000" stroke-width="2"/>
+    <path d="M300,175 L345,185 L300,200 Z" fill="#c1272d" stroke="#000" stroke-width="2"/>
+  </g>
+
+  <!-- Толпа за ним, с кулаками -->
+  <g opacity="0.85">
+    <ellipse cx="180" cy="370" rx="20" ry="4" fill="#0a0a0a" opacity="0.5"/>
+    <path d="M168,320 L182,320 L182,368 L162,370 Z" fill="#2a2a3a" stroke="#000" stroke-width="2"/>
+    <path d="M188,320 L202,320 L208,365 L188,370 Z" fill="#2a2a3a" stroke="#000" stroke-width="2"/>
+    <path d="M160,275 L210,275 L218,320 L155,320 Z" fill="#f0e6d2" stroke="#000" stroke-width="2.5"/>
+    <ellipse cx="185" cy="245" rx="22" ry="26" fill="#e8c8a0" stroke="#000" stroke-width="2.5"/>
+    <path d="M165,238 Q163,225 168,220 Q166,214 172,216 Q175,208 182,216 Q187,214 189,222 Q194,228 189,238 L165,238 Z" fill="#1a0f0a" stroke="#000" stroke-width="2"/>
+    <circle cx="177" cy="245" r="6" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="1.5"/>
+    <circle cx="193" cy="245" r="6" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="1.5"/>
+    <circle cx="178" cy="246" r="1.3" fill="#1a0a0a"/>
+    <circle cx="194" cy="246" r="1.3" fill="#1a0a0a"/>
+    <path d="M155,285 L130,260 L125,270 L148,292 Z" fill="#f0e6d2" stroke="#000" stroke-width="2"/>
+    <circle cx="128" cy="265" r="7" fill="#e8c8a0" stroke="#000" stroke-width="2"/>
+
+    <ellipse cx="580" cy="370" rx="20" ry="4" fill="#0a0a0a" opacity="0.5"/>
+    <path d="M568,320 L582,320 L582,368 L562,370 Z" fill="#2a2a3a" stroke="#000" stroke-width="2"/>
+    <path d="M588,320 L602,320 L608,365 L588,370 Z" fill="#2a2a3a" stroke="#000" stroke-width="2"/>
+    <path d="M560,275 L610,275 L618,320 L555,320 Z" fill="#f0e6d2" stroke="#000" stroke-width="2.5"/>
+    <ellipse cx="585" cy="245" rx="22" ry="26" fill="#e8c8a0" stroke="#000" stroke-width="2.5"/>
+    <path d="M565,238 Q563,225 568,220 Q566,214 572,216 Q575,208 582,216 Q587,214 589,222 Q594,228 589,238 L565,238 Z" fill="#1a0f0a" stroke="#000" stroke-width="2"/>
+    <circle cx="577" cy="245" r="6" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="1.5"/>
+    <circle cx="593" cy="245" r="6" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="1.5"/>
+    <circle cx="578" cy="246" r="1.3" fill="#1a0a0a"/>
+    <circle cx="594" cy="246" r="1.3" fill="#1a0a0a"/>
+    <path d="M615,285 L640,260 L645,270 L622,292 Z" fill="#f0e6d2" stroke="#000" stroke-width="2"/>
+    <circle cx="642" cy="265" r="7" fill="#e8c8a0" stroke="#000" stroke-width="2"/>
+  </g>
+
+  <text x="100" y="200" font-size="18" font-weight="bold" fill="#f4c430" stroke="#000" stroke-width="1" font-family="Arial Black">やられない!</text>
+  <text x="650" y="200" font-size="18" font-weight="bold" fill="#f4c430" stroke="#000" stroke-width="1" font-family="Arial Black">まだ戸ある!</text>
+</svg>

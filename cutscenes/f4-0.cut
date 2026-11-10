@@ -1,0 +1,31 @@
+<!--
+  Yóu Lóng Tanks — катсцена f4-0.cut
+  Назначение: обычный game over
+  Размер SVG: viewBox="0 0 800 400" (не менять)
+  Палитра: фон #1a0a0a, красный #c1272d, золотой #f4c430, крем #f0e6d2
+  Блок <metadata> внизу — НЕ удалять (реплики диалога в JSON).
+  Рисуй что угодно внутри <svg>, кроме <metadata>.
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" preserveAspectRatio="xMidYMid meet">
+<metadata>
+{
+  "title": "Проигрыш",
+  "lines": [
+    {
+      "speaker": "学生",
+      "text": "Колонна разбилась."
+    },
+    {
+      "speaker": "指挥官",
+      "text": "Отступаем."
+    }
+  ]
+}
+</metadata>
+<rect width="800" height="400" fill="#1a0a0a"/>
+<text x="400" y="180" font-size="58" font-weight="bold" fill="#c1272d" text-anchor="middle" font-family="Arial Black, sans-serif">GAME OVER</text>
+<text x="400" y="235" font-size="22" fill="#f4c430" text-anchor="middle" font-family="Arial, sans-serif">Колонна разбилась</text>
+<text x="400" y="275" font-size="16" fill="#f0e6d2" text-anchor="middle" font-family="Arial, sans-serif">Попробуй снова</text>
+<rect x="0" y="380" width="800" height="20" fill="#2a1a10"/>
+</svg>

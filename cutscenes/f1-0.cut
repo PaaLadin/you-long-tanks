@@ -1,0 +1,38 @@
+<!--
+  Yóu Lóng Tanks — катсцена f1-0.cut
+  Назначение: победа
+  Размер SVG: viewBox="0 0 800 400" (не менять)
+  Палитра: фон #1a0a0a, красный #c1272d, золотой #f4c430, крем #f0e6d2
+  Блок <metadata> внизу — НЕ удалять (реплики диалога в JSON).
+  Рисуй что угодно внутри <svg>, кроме <metadata>.
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" preserveAspectRatio="xMidYMid meet">
+<metadata>
+{
+  "title": "Победа",
+  "lines": [
+    {
+      "speaker": "指挥官",
+      "text": "Все 20 уровней пройдены. Город пал."
+    },
+    {
+      "speaker": "学生",
+      "text": "Но мы всё равно будем петь."
+    }
+  ]
+}
+</metadata>
+<rect width="800" height="400" fill="#f4c430"/>
+<circle cx="400" cy="160" r="110" fill="#fff4c0" stroke="#1a0a0a" stroke-width="6"/>
+<text x="400" y="150" font-size="48" font-weight="bold" fill="#c1272d" text-anchor="middle" font-family="Arial Black, sans-serif">胜利</text>
+<text x="400" y="195" font-size="30" font-weight="bold" fill="#1a0a0a" text-anchor="middle" font-family="Arial Black, sans-serif">VICTORY</text>
+<text x="400" y="310" font-size="22" fill="#1a0a0a" text-anchor="middle" font-family="Arial, sans-serif">Все 20 уровней пройдены</text>
+<text x="400" y="345" font-size="16" fill="#6a1a1a" text-anchor="middle" font-family="Arial, sans-serif">Слава героям</text>
+<circle cx="150" cy="80" r="6" fill="#c1272d"/>
+<circle cx="220" cy="120" r="4" fill="#1a0a0a"/>
+<circle cx="640" cy="90" r="5" fill="#c1272d"/>
+<circle cx="690" cy="130" r="4" fill="#1a0a0a"/>
+<circle cx="80" cy="330" r="4" fill="#c1272d"/>
+<circle cx="720" cy="340" r="5" fill="#1a0a0a"/>
+</svg>

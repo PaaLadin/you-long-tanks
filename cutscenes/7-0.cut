@@ -1,0 +1,93 @@
+<!--
+  Yóu Lóng Tanks — катсцена 7-0.cut
+  Назначение: перед уровнем 7
+  Размер SVG: viewBox="0 0 800 400" (не менять)
+  Палитра: фон #1a0a0a, красный #c1272d, золотой #f4c430, крем #f0e6d2
+  Шрифты: "Noto Serif SC" (RU+CN), "Arial Black" (заголовки)
+  Блок <metadata> внизу — НЕ удалять (реплики диалога в JSON).
+  Рисуй что угодно внутри <svg>, кроме <metadata>.
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" preserveAspectRatio="xMidYMid meet" shape-rendering="geometricPrecision">
+<metadata>
+{
+  "title": "Прорыв",
+  "lines": [
+    {
+      "speaker": "指挥官",
+      "text": "Вперёд! Ломаем баррикады!"
+    },
+    {
+      "speaker": "学生",
+      "text": "Они прорвались!"
+    }
+  ]
+}
+</metadata>
+
+  <rect width="800" height="400" fill="#0a0808"/>
+  <rect x="0" y="0" width="800" height="240" fill="#1a0a12"/>
+  <rect x="0" y="200" width="800" height="40" fill="#2a1a1a"/>
+  <rect x="0" y="235" width="800" height="165" fill="#2a1a10"/>
+  <rect x="0" y="235" width="800" height="3" fill="#5a3a2a"/>
+  <circle cx="680" cy="60" r="38" fill="#e8c060" stroke="#000" stroke-width="3"/>
+  <circle cx="695" cy="55" r="30" fill="#1a0a12" opacity="0.4"/>
+  <circle cx="120" cy="40" r="2" fill="#fff" opacity="0.6"/>
+
+  <g id="tank_breaking">
+    <path d="M280,280 L600,280 L620,340 L260,340 Z" fill="#1a1a1a" stroke="#000" stroke-width="4"/>
+    <circle cx="310" cy="320" r="18" fill="#3a3a3a" stroke="#000" stroke-width="3"/>
+    <circle cx="365" cy="320" r="18" fill="#3a3a3a" stroke="#000" stroke-width="3"/>
+    <circle cx="420" cy="320" r="18" fill="#3a3a3a" stroke="#000" stroke-width="3"/>
+    <circle cx="475" cy="320" r="18" fill="#3a3a3a" stroke="#000" stroke-width="3"/>
+    <circle cx="530" cy="320" r="18" fill="#3a3a3a" stroke="#000" stroke-width="3"/>
+    <circle cx="585" cy="320" r="18" fill="#3a3a3a" stroke="#000" stroke-width="3"/>
+    <path d="M290,220 L580,220 L600,280 L270,280 Z" fill="#5a7a3a" stroke="#000" stroke-width="4"/>
+    <path d="M290,220 L580,220 L585,240 L290,240 Z" fill="#7a9a5a" opacity="0.5"/>
+    <path d="M370,140 L520,140 L550,220 L340,220 Z" fill="#5a7a3a" stroke="#000" stroke-width="4"/>
+    <path d="M370,140 L520,140 L525,160 L365,160 Z" fill="#7a9a5a" opacity="0.5"/>
+    <ellipse cx="445" cy="135" rx="45" ry="12" fill="#0a0a0a" stroke="#000" stroke-width="3"/>
+    <path d="M380,170 L220,170 L220,190 L380,190 Z" fill="#4a5a3a" stroke="#000" stroke-width="3"/>
+    <rect x="210" y="165" width="15" height="30" fill="#2a3a2a" stroke="#000" stroke-width="2"/>
+    <!-- Огонь из дула -->
+    <g>
+      <path d="M210,180 L150,155 L140,170 L175,180 L140,190 L155,200 Z" fill="#f8c040" stroke="#c1272d" stroke-width="2"/>
+      <circle cx="210" cy="180" r="15" fill="#f8e0a0"/>
+      <circle cx="210" cy="180" r="8" fill="#fff"/>
+    </g>
+    <!-- Разлетающиеся обломки баррикады -->
+    <path d="M180,280 L230,265 L245,290 L200,300 Z" fill="#8a5a2a" stroke="#000" stroke-width="2.5"/>
+    <path d="M140,260 L165,250 L180,270 L155,280 Z" fill="#5a5a5a" stroke="#000" stroke-width="2"/>
+    <circle cx="120" cy="290" r="10" fill="#6a3a1a" stroke="#000" stroke-width="2"/>
+    <!-- Командир кричит -->
+    <ellipse cx="445" cy="115" rx="20" ry="24" fill="#e8c8a0" stroke="#000" stroke-width="2.5"/>
+    <path d="M427,107 Q424,95 430,90 Q426,84 434,86 Q438,78 446,86 Q452,84 454,93 Q460,100 455,108 L427,108 Z" fill="#c1272d" stroke="#000" stroke-width="2"/>
+    <circle cx="436" cy="115" r="2" fill="#1a0a0a"/>
+    <circle cx="454" cy="115" r="2" fill="#1a0a0a"/>
+    <ellipse cx="445" cy="130" rx="7" ry="9" fill="#4a0a0a" stroke="#000" stroke-width="1.5"/>
+  </g>
+
+  <!-- Студенты отбегают -->
+  <g>
+    <path d="M80,290 L100,290 L98,340 L75,345 Z" fill="#2a2a3a" stroke="#000" stroke-width="2"/>
+    <path d="M105,290 L125,290 L135,335 L110,345 Z" fill="#2a2a3a" stroke="#000" stroke-width="2"/>
+    <path d="M70,240 L135,240 L145,290 L62,290 Z" fill="#f0e6d2" stroke="#000" stroke-width="2.5"/>
+    <ellipse cx="102" cy="210" rx="28" ry="32" fill="#e8c8a0" stroke="#000" stroke-width="3"/>
+    <path d="M76,202 Q74,186 82,178 Q79,168 88,170 Q92,160 102,168 Q108,162 116,170 Q123,168 126,182 Q132,190 126,202 L76,202 Z" fill="#1a0f0a" stroke="#000" stroke-width="2.5"/>
+    <circle cx="90" cy="210" r="8" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="2"/>
+    <circle cx="114" cy="210" r="8" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="2"/>
+    <ellipse cx="90" cy="212" rx="5" ry="6" fill="#fff" stroke="#000" stroke-width="1.5"/>
+    <ellipse cx="114" cy="212" rx="5" ry="6" fill="#fff" stroke="#000" stroke-width="1.5"/>
+    <circle cx="91" cy="212" r="1.5" fill="#1a0a0a"/>
+    <circle cx="115" cy="212" r="1.5" fill="#1a0a0a"/>
+    <ellipse cx="102" cy="230" rx="7" ry="9" fill="#4a0a0a" stroke="#000" stroke-width="1.5"/>
+    <!-- Руки вперёд, бежит -->
+    <path d="M68,250 L40,230 L35,240 L60,262 Z" fill="#f0e6d2" stroke="#000" stroke-width="2"/>
+    <path d="M138,250 L170,225 L175,235 L148,262 Z" fill="#f0e6d2" stroke="#000" stroke-width="2"/>
+    <!-- Пот -->
+    <path d="M130,195 Q135,185 132,182 Q126,187 128,195 Z" fill="#7ac8e8" stroke="#000" stroke-width="1.2"/>
+  </g>
+
+  <text x="200" y="160" font-size="22" font-weight="bold" fill="#f4c430" stroke="#000" stroke-width="1" font-family="Arial Black">ドカーン!</text>
+  <text x="600" y="170" font-size="18" font-weight="bold" fill="#c1272d" stroke="#000" stroke-width="1" font-family="Arial Black">バリケード破壊!</text>
+</svg>

@@ -1,0 +1,119 @@
+<!--
+  Yóu Lóng Tanks — катсцена 10-0.cut
+  Назначение: перед уровнем 10
+  Размер SVG: viewBox="0 0 800 400" (не менять)
+  Палитра: фон #1a0a0a, красный #c1272d, золотой #f4c430, крем #f0e6d2
+  Шрифты: "Noto Serif SC" (RU+CN), "Arial Black" (заголовки)
+  Блок <metadata> внизу — НЕ удалять (реплики диалога в JSON).
+  Рисуй что угодно внутри <svg>, кроме <metadata>.
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" preserveAspectRatio="xMidYMid meet" shape-rendering="geometricPrecision">
+<metadata>
+{
+  "title": "Вася",
+  "lines": [
+    {
+      "speaker": "学生 (Вася)",
+      "text": "За Родину!"
+    },
+    {
+      "speaker": "指挥官",
+      "text": "Заткнитесь, пацан!"
+    }
+  ]
+}
+</metadata>
+
+  <rect width="800" height="400" fill="#0a0808"/>
+  <rect x="0" y="0" width="800" height="240" fill="#1a0a12"/>
+  <rect x="0" y="200" width="800" height="40" fill="#2a1a1a"/>
+  <rect x="0" y="235" width="800" height="165" fill="#2a1a10"/>
+  <rect x="0" y="235" width="800" height="3" fill="#5a3a2a"/>
+  <circle cx="680" cy="60" r="38" fill="#e8c060" stroke="#000" stroke-width="3"/>
+  <circle cx="695" cy="55" r="30" fill="#1a0a12" opacity="0.4"/>
+  <circle cx="120" cy="40" r="2" fill="#fff" opacity="0.6"/>
+
+  <!-- Танк Васи крупным планом -->
+  <g id="vasya_tank">
+    <!-- Взрыв сзади -->
+    <circle cx="100" cy="250" r="40" fill="#f8c040" opacity="0.4"/>
+    <circle cx="100" cy="250" r="25" fill="#f8e0a0" opacity="0.6"/>
+    <path d="M60,200 L40,180 M60,300 L40,320 M100,180 L100,160 M100,320 L100,340 M140,200 L160,180 M140,300 L160,320" stroke="#c1272d" stroke-width="3"/>
+
+    <!-- Гусеница -->
+    <path d="M200,320 L700,320 L720,380 L180,380 Z" fill="#1a1a1a" stroke="#000" stroke-width="4"/>
+    <circle cx="240" cy="350" r="20" fill="#3a3a3a" stroke="#000" stroke-width="3"/>
+    <circle cx="300" cy="350" r="20" fill="#3a3a3a" stroke="#000" stroke-width="3"/>
+    <circle cx="360" cy="350" r="20" fill="#3a3a3a" stroke="#000" stroke-width="3"/>
+    <circle cx="420" cy="350" r="20" fill="#3a3a3a" stroke="#000" stroke-width="3"/>
+    <circle cx="480" cy="350" r="20" fill="#3a3a3a" stroke="#000" stroke-width="3"/>
+    <circle cx="540" cy="350" r="20" fill="#3a3a3a" stroke="#000" stroke-width="3"/>
+    <circle cx="600" cy="350" r="20" fill="#3a3a3a" stroke="#000" stroke-width="3"/>
+    <circle cx="660" cy="350" r="20" fill="#3a3a3a" stroke="#000" stroke-width="3"/>
+
+    <!-- Корпус -->
+    <path d="M220,240 L680,240 L700,320 L210,320 Z" fill="#5a7a3a" stroke="#000" stroke-width="4"/>
+    <path d="M220,240 L680,240 L685,260 L215,260 Z" fill="#7a9a5a" opacity="0.5"/>
+    <path d="M280,260 L600,260 L600,265 L280,265 Z" fill="#9aba6a" opacity="0.4"/>
+
+    <!-- Башня -->
+    <path d="M320,150 L600,150 L630,240 L300,240 Z" fill="#5a7a3a" stroke="#000" stroke-width="4"/>
+    <path d="M320,150 L600,150 L605,175 L315,175 Z" fill="#7a9a5a" opacity="0.5"/>
+
+    <!-- Люк -->
+    <ellipse cx="460" cy="145" rx="60" ry="14" fill="#0a0a0a" stroke="#000" stroke-width="3"/>
+
+    <!-- Ствол направлен прямо (на нас) -->
+    <ellipse cx="460" cy="220" rx="30" ry="80" fill="#4a5a3a" stroke="#000" stroke-width="4"/>
+    <ellipse cx="460" cy="220" rx="18" ry="50" fill="#2a3a2a" stroke="#000" stroke-width="2"/>
+
+    <!-- Командир Вася в люке, кричит -->
+    <ellipse cx="460" cy="115" rx="42" ry="46" fill="#e8c8a0" stroke="#000" stroke-width="4"/>
+    <path d="M420,105 Q415,80 428,70 Q420,58 435,62 Q442,50 458,60 Q470,50 480,62 Q492,58 495,72 Q510,80 502,100 Q508,120 490,128 L420,128 Z" fill="#c1272d" stroke="#000" stroke-width="3"/>
+    <!-- Глаза, полные решимости -->
+    <circle cx="442" cy="115" r="9" fill="#fff" stroke="#000" stroke-width="2.5"/>
+    <circle cx="478" cy="115" r="9" fill="#fff" stroke="#000" stroke-width="2.5"/>
+    <circle cx="444" cy="117" r="3" fill="#1a0a0a"/>
+    <circle cx="480" cy="117" r="3" fill="#1a0a0a"/>
+    <!-- Брови решительно -->
+    <path d="M432,102 L452,100 M468,100 L488,102" stroke="#1a0a0a" stroke-width="3" fill="none"/>
+    <!-- Рот открыт в крике -->
+    <ellipse cx="460" cy="140" rx="14" ry="18" fill="#4a0a0a" stroke="#000" stroke-width="2.5"/>
+    <ellipse cx="460" cy="142" rx="8" ry="10" fill="#8a2a1a"/>
+    <!-- Пот и напряжение -->
+    <path d="M408,105 Q403,95 406,90 Q413,95 410,105 Z" fill="#7ac8e8" stroke="#000" stroke-width="1.5"/>
+    <path d="M508,105 Q513,95 510,90 Q503,95 506,105 Z" fill="#7ac8e8" stroke="#000" stroke-width="1.5"/>
+
+    <!-- Кулак Васьки поднят -->
+    <path d="M440,150 L380,110 L370,125 L420,160 Z" fill="#5a7a3a" stroke="#000" stroke-width="3"/>
+    <ellipse cx="378" cy="115" rx="14" ry="12" fill="#e8c8a0" stroke="#000" stroke-width="2.5"/>
+  </g>
+
+  <!-- Огонь из ствола -->
+  <g>
+    <circle cx="460" cy="245" r="50" fill="#f8c040" opacity="0.6"/>
+    <circle cx="460" cy="245" r="30" fill="#f8e0a0" opacity="0.8"/>
+    <circle cx="460" cy="245" r="15" fill="#fff"/>
+    <path d="M460,200 L450,160 L465,200 L480,165 L475,215" stroke="#c1272d" stroke-width="2" fill="none"/>
+  </g>
+
+  <text x="600" y="180" font-size="28" font-weight="bold" fill="#f4c430" stroke="#000" stroke-width="1.5" font-family="Arial Black">進撃!</text>
+  <text x="580" y="220" font-size="20" font-weight="bold" fill="#c1272d" stroke="#000" stroke-width="1" font-family="Arial Black">突撃せよ!</text>
+
+  <!-- Студент на броне танка (запрыгнул) -->
+  <g opacity="0.9">
+    <path d="M320,180 L335,180 L335,215 L315,218 Z" fill="#2a2a3a" stroke="#000" stroke-width="2"/>
+    <path d="M340,180 L355,180 L358,213 L340,218 Z" fill="#2a2a3a" stroke="#000" stroke-width="2"/>
+    <path d="M312,150 L360,150 L368,190 L308,190 Z" fill="#f0e6d2" stroke="#000" stroke-width="2"/>
+    <ellipse cx="340" cy="130" rx="20" ry="24" fill="#e8c8a0" stroke="#000" stroke-width="2.5"/>
+    <path d="M322,124 Q320,112 326,108 Q324,102 330,104 Q334,96 340,104 Q346,100 348,110 Q354,116 348,124 L322,124 Z" fill="#1a0f0a" stroke="#000" stroke-width="2"/>
+    <circle cx="333" cy="130" r="5" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="1.5"/>
+    <circle cx="347" cy="130" r="5" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="1.5"/>
+    <circle cx="334" cy="131" r="1.2" fill="#1a0a0a"/>
+    <circle cx="348" cy="131" r="1.2" fill="#1a0a0a"/>
+    <!-- Рука вверх -->
+    <path d="M368,160 L395,135 L400,145 L375,165 Z" fill="#f0e6d2" stroke="#000" stroke-width="2"/>
+    <ellipse cx="395" cy="138" rx="8" ry="7" fill="#e8c8a0" stroke="#000" stroke-width="1.5"/>
+  </g>
+</svg>

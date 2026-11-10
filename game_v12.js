@@ -1176,33 +1176,33 @@ const Game = {
   startStageIntro() {
     this.state = STATE.INTRO;
     UI.showScreen(null);
-    // Катсцена между уровнями (3,4,5)
-    if (this._levelCutscenes && this._levelCutscenes[this.level]) {
-      UI.showLevelCutscene(this.level, () => {
-        Game.state = STATE.INTRO;
-        UI.showStageIntro(Game.level, Game.target);
-        Audio.stopMusic();
-        setTimeout(() => {
-          if (Game.state === STATE.INTRO) {
-            Game.state = STATE.PLAYING;
-            UI.hideStageIntro();
-            UI.setHUD(true);
-            Audio.startMusic();
-          }
-        }, 2400);
-      });
-      return;
+    const self = this;
+    function doStage() {
+      UI.showStageIntro(self.level, self.target);
+      Audio.stopMusic();
+      setTimeout(() => {
+        if (self.state === STATE.INTRO) {
+          self.state = STATE.PLAYING;
+          UI.hideStageIntro();
+          UI.setHUD(true);
+          Audio.startMusic();
+        }
+      }, 2400);
     }
-    UI.showStageIntro(this.level, this.target);
-    Audio.stopMusic();
-    setTimeout(() => {
-      if (this.state === STATE.INTRO) {
-        this.state = STATE.PLAYING;
-        UI.hideStageIntro();
-        UI.setHUD(true);
-        Audio.startMusic();
-      }
-    }, 2400);
+    if (typeof CutSceneLoader !== 'undefined') {
+      CutSceneLoader.prepareForLevel(this.level).then(function (cuts) {
+        if (cuts && cuts.length > 0) {
+          UI.showCutSet(cuts, function () {
+            self.state = STATE.INTRO;
+            doStage();
+          });
+        } else {
+          doStage();
+        }
+      }).catch(function () { doStage(); });
+    } else {
+      doStage();
+    }
   },
 
   spawnMan() {
@@ -1772,34 +1772,51 @@ const Game = {
     }
   },
 
+  _withFinalCut(prefix, nextFn) {
+    if (typeof CutSceneLoader === 'undefined') { nextFn(); return; }
+    CutSceneLoader.prepareForFinal(prefix).then(function (cuts) {
+      if (cuts && cuts.length > 0) {
+        UI.showCutSet(cuts, function () { nextFn(); });
+      } else {
+        nextFn();
+      }
+    }).catch(function () { nextFn(); });
+  },
+
   peaceVictory() {
-    this.state = STATE.GAMEOVER;
-    Audio.stopMusic();
-    Audio.sfx('break');
-    this.addTrauma(0.3);
-    this.addFlash('#f4c430', 0.5);
-    UI.setHUD(false);
-    highscores.push({ score: this.score, level: this.level, date: new Date().toISOString().slice(0,10) });
-    highscores.sort((a, b) => b.score - a.score);
-    highscores = highscores.slice(0, 5);
-    Storage.set('highscores', highscores);
-    this.best = highscores[0].score;
-    UI.showPeaceScreen(this.score);
+    const self = this;
+    this._withFinalCut('f2', function () {
+      self.state = STATE.GAMEOVER;
+      Audio.stopMusic();
+      Audio.sfx('break');
+      self.addTrauma(0.3);
+      self.addFlash('#f4c430', 0.5);
+      UI.setHUD(false);
+      highscores.push({ score: self.score, level: self.level, date: new Date().toISOString().slice(0,10) });
+      highscores.sort((a, b) => b.score - a.score);
+      highscores = highscores.slice(0, 5);
+      Storage.set('highscores', highscores);
+      self.best = highscores[0].score;
+      UI.showPeaceScreen(self.score);
+    });
   },
 
   tribunalLoss() {
-    this.state = STATE.GAMEOVER;
-    Audio.stopMusic();
-    Audio.sfx('death');
-    this.addTrauma(0.9);
-    this.addFlash('#c1272d', 0.6);
-    UI.setHUD(false);
-    highscores.push({ score: this.score, level: this.level, date: new Date().toISOString().slice(0,10) });
-    highscores.sort((a, b) => b.score - a.score);
-    highscores = highscores.slice(0, 5);
-    Storage.set('highscores', highscores);
-    this.best = highscores[0].score;
-    UI.showTribunalScreen(this.score);
+    const self = this;
+    this._withFinalCut('f0', function () {
+      self.state = STATE.GAMEOVER;
+      Audio.stopMusic();
+      Audio.sfx('death');
+      self.addTrauma(0.9);
+      self.addFlash('#c1272d', 0.6);
+      UI.setHUD(false);
+      highscores.push({ score: self.score, level: self.level, date: new Date().toISOString().slice(0,10) });
+      highscores.sort((a, b) => b.score - a.score);
+      highscores = highscores.slice(0, 5);
+      Storage.set('highscores', highscores);
+      self.best = highscores[0].score;
+      UI.showTribunalScreen(self.score);
+    });
   },
 
   _checkTopWallLock() {
@@ -1811,35 +1828,39 @@ const Game = {
   },
 
   wallLockdownLoss() {
-    this.state = STATE.GAMEOVER;
-    Audio.stopMusic();
-    Audio.sfx('death');
-    this.addTrauma(0.9);
-    this.addFlash('#c1272d', 0.6);
-    UI.setHUD(false);
-    highscores.push({ score: this.score, level: this.level, date: new Date().toISOString().slice(0,10) });
-    highscores.sort((a, b) => b.score - a.score);
-    highscores = highscores.slice(0, 5);
-    Storage.set('highscores', highscores);
-    this.best = highscores[0].score;
-    UI.showWallLockdownScreen(this.score);
+    const self = this;
+    this._withFinalCut('f3', function () {
+      self.state = STATE.GAMEOVER;
+      Audio.stopMusic();
+      Audio.sfx('death');
+      self.addTrauma(0.9);
+      self.addFlash('#c1272d', 0.6);
+      UI.setHUD(false);
+      highscores.push({ score: self.score, level: self.level, date: new Date().toISOString().slice(0,10) });
+      highscores.sort((a, b) => b.score - a.score);
+      highscores = highscores.slice(0, 5);
+      Storage.set('highscores', highscores);
+      self.best = highscores[0].score;
+      UI.showWallLockdownScreen(self.score);
+    });
   },
 
   die(reason) {
-    this.state = STATE.GAMEOVER;
-    Audio.stopMusic();
-    Audio.sfx('death');
-    // JUICE: strong shake + red flash
-    this.addTrauma(0.8);
-    this.addFlash('#c1272d', 0.5);
-    UI.setHUD(false);
-    // Highscores
-    highscores.push({ score: this.score, level: this.level, date: new Date().toISOString().slice(0,10) });
-    highscores.sort((a, b) => b.score - a.score);
-    highscores = highscores.slice(0, 5);
-    Storage.set('highscores', highscores);
-    this.best = highscores[0].score;
-    UI.showGameOver(this.score);
+    const self = this;
+    this._withFinalCut('f4', function () {
+      self.state = STATE.GAMEOVER;
+      Audio.stopMusic();
+      Audio.sfx('death');
+      self.addTrauma(0.8);
+      self.addFlash('#c1272d', 0.5);
+      UI.setHUD(false);
+      highscores.push({ score: self.score, level: self.level, date: new Date().toISOString().slice(0,10) });
+      highscores.sort((a, b) => b.score - a.score);
+      highscores = highscores.slice(0, 5);
+      Storage.set('highscores', highscores);
+      self.best = highscores[0].score;
+      UI.showGameOver(self.score);
+    });
   },
 
   winLevel() {
@@ -1853,15 +1874,17 @@ const Game = {
     this.addFloat(CONFIG.SW/2, CONFIG.SH/2 - 60, '\u80dc\u5229!', '#f4c430');
     this.level++;
     if (this.level > CONFIG.TARGETS.length) {
-      // Все уровни пройдены — победа
-      this.state = STATE.GAMEOVER;
-      Audio.stopMusic();
-      UI.setHUD(false);
-      highscores.push({ score: this.score, level: this.level - 1, date: new Date().toISOString().slice(0,10) });
-      highscores.sort((a, b) => b.score - a.score);
-      highscores = highscores.slice(0, 5);
-      Storage.set('highscores', highscores);
-      UI.showGameOver(this.score, true);
+      const self = this;
+      this._withFinalCut('f1', function () {
+        self.state = STATE.GAMEOVER;
+        Audio.stopMusic();
+        UI.setHUD(false);
+        highscores.push({ score: self.score, level: self.level - 1, date: new Date().toISOString().slice(0,10) });
+        highscores.sort((a, b) => b.score - a.score);
+        highscores = highscores.slice(0, 5);
+        Storage.set('highscores', highscores);
+        UI.showGameOver(self.score, true);
+      });
     } else {
       this.loadLevel();
       this.startStageIntro();
@@ -1943,10 +1966,33 @@ const UI = {
     // Screens
     document.getElementById('btn-start').onclick = () => {
       Audio.init(); Audio.resume();
-      Game.state = 'story';
-      Game._storyStep = 0;
-      UI.showStoryCard(0);
-      UI.showScreen('story-screen');
+      if (typeof CutSceneLoader !== 'undefined') {
+        CutSceneLoader.prepare('0').then(function (cuts) {
+          if (cuts && cuts.length > 0) {
+            UI.showCutSet(cuts, function () {
+              Game.state = STATE.TITLE;
+              UI.showScreen(null);
+              Game.start();
+              Game.startStageIntro();
+            });
+          } else {
+            Game.state = 'story';
+            Game._storyStep = 0;
+            UI.showStoryCard(0);
+            UI.showScreen('story-screen');
+          }
+        }).catch(function () {
+          Game.state = 'story';
+          Game._storyStep = 0;
+          UI.showStoryCard(0);
+          UI.showScreen('story-screen');
+        });
+      } else {
+        Game.state = 'story';
+        Game._storyStep = 0;
+        UI.showStoryCard(0);
+        UI.showScreen('story-screen');
+      }
     };
 
     document.getElementById('btn-story-continue').onclick = () => {
@@ -2013,6 +2059,54 @@ const UI = {
     _setText('btn-sfx', settings.sfx ? 'ON' : 'OFF');
     _setText('btn-theme', settings.theme === 'dark' ? 'DARK' : 'LIGHT');
     if (settings.theme === 'light') document.documentElement.setAttribute('data-theme', 'light');
+  },
+
+  showCutSet(cuts, onDone) {
+    // cuts: [{imgUrl, title, lines}] — проигрывает последовательно.
+    if (!cuts || cuts.length === 0) { if (onDone) onDone(); return; }
+    Game.state = 'story';
+    this._cutQueue = cuts;
+    this._cutPos = 0;
+    this._cutDone = onDone;
+    this._renderCutCurrent();
+  },
+
+  _renderCutCurrent() {
+    const cuts = this._cutQueue || [];
+    const i = this._cutPos || 0;
+    const c = cuts[i];
+    if (!c) {
+      const cb = this._cutDone; this._cutDone = null; this._cutQueue = null; this._cutPos = 0;
+      this.showScreen(null);
+      if (cb) cb();
+      return;
+    }
+    const img = document.getElementById('story-img');
+    if (img) img.src = c.imgUrl || '';
+    const txtEl = document.getElementById('story-text');
+    if (txtEl) {
+      txtEl.innerHTML = '';
+      (c.lines || []).forEach(function (line) {
+        const p = document.createElement('p');
+        const s = document.createElement('span');
+        s.className = 'speaker';
+        s.textContent = '[' + (line.speaker || '') + ']';
+        p.appendChild(s);
+        p.appendChild(document.createTextNode(' ' + (line.text || '')));
+        txtEl.appendChild(p);
+      });
+    }
+    const prog = document.getElementById('story-progress');
+    if (prog) prog.textContent = (i + 1) + '/' + cuts.length;
+    const btn = document.getElementById('btn-story-continue');
+    if (btn) {
+      btn.textContent = (i + 1 === cuts.length) ? 'Продолжить ▶' : 'Далее ▶';
+      btn.onclick = () => {
+        this._cutPos = (this._cutPos || 0) + 1;
+        this._renderCutCurrent();
+      };
+    }
+    this.showScreen('story-screen');
   },
 
   showLevelCutscene(level, onDone) {

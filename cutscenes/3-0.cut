@@ -1,0 +1,107 @@
+<!--
+  Yóu Lóng Tanks — катсцена 3-0.cut
+  Назначение: перед уровнем 3
+  Размер SVG: viewBox="0 0 800 400" (не менять)
+  Палитра: фон #1a0a0a, красный #c1272d, золотой #f4c430, крем #f0e6d2
+  Шрифты: "Noto Serif SC" (RU+CN), "Arial Black" (заголовки)
+  Блок <metadata> внизу — НЕ удалять (реплики диалога в JSON).
+  Рисуй что угодно внутри <svg>, кроме <metadata>.
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" preserveAspectRatio="xMidYMid meet" shape-rendering="geometricPrecision">
+<metadata>
+{
+  "title": "Велосипеды",
+  "lines": [
+    {
+      "speaker": "指挥官",
+      "text": "Студенты стали бросать велосипеды!"
+    },
+    {
+      "speaker": "学生",
+      "text": "Берегись! Велосипед летит в танк!"
+    }
+  ]
+}
+</metadata>
+
+  <rect width="800" height="400" fill="#0a0808"/>
+  <rect x="0" y="0" width="800" height="240" fill="#1a0a12"/>
+  <rect x="0" y="200" width="800" height="40" fill="#2a1a1a"/>
+  <rect x="0" y="235" width="800" height="165" fill="#2a1a10"/>
+  <circle cx="650" cy="60" r="38" fill="#e8c060" stroke="#000" stroke-width="3"/>
+  <circle cx="665" cy="55" r="30" fill="#1a0a12" opacity="0.4"/>
+  <circle cx="120" cy="40" r="2" fill="#fff" opacity="0.6"/>
+  <circle cx="320" cy="55" r="1.5" fill="#fff" opacity="0.5"/>
+
+  <!-- Танк слева -->
+  <g id="tank">
+    <path d="M80,320 L260,320 L270,360 L70,360 Z" fill="#1a1a1a" stroke="#000" stroke-width="4"/>
+    <circle cx="100" cy="340" r="12" fill="#3a3a3a" stroke="#000" stroke-width="2.5"/>
+    <circle cx="140" cy="340" r="12" fill="#3a3a3a" stroke="#000" stroke-width="2.5"/>
+    <circle cx="180" cy="340" r="12" fill="#3a3a3a" stroke="#000" stroke-width="2.5"/>
+    <circle cx="220" cy="340" r="12" fill="#3a3a3a" stroke="#000" stroke-width="2.5"/>
+    <path d="M85,265 L245,265 L260,320 L75,320 Z" fill="#5a7a3a" stroke="#000" stroke-width="3"/>
+    <path d="M120,220 L215,220 L230,265 L110,265 Z" fill="#5a7a3a" stroke="#000" stroke-width="3"/>
+    <ellipse cx="170" cy="215" rx="28" ry="8" fill="#0a0a0a" stroke="#000" stroke-width="2"/>
+    <path d="M95,235 L55,235 L55,245 L95,245 Z" fill="#4a5a3a" stroke="#000" stroke-width="3"/>
+  </g>
+
+  <!-- Студенты бросают велосипеды -->
+  <g id="thrower1">
+    <ellipse cx="380" cy="372" rx="30" ry="5" fill="#0a0a0a" opacity="0.6"/>
+    <path d="M365,320 L385,320 L385,368 L360,370 Z" fill="#2a2a3a" stroke="#000" stroke-width="2.5"/>
+    <path d="M390,320 L410,320 L418,365 L395,370 Z" fill="#2a2a3a" stroke="#000" stroke-width="2.5"/>
+    <path d="M358,280 L416,280 L424,325 L353,325 Z" fill="#f0e6d2" stroke="#000" stroke-width="2.5"/>
+    <path d="M348,235 L430,235 L442,285 L356,285 Z" fill="#f0e6d2" stroke="#000" stroke-width="3"/>
+    <path d="M372,235 L385,260 L385,290 L366,282 Z" fill="#f0e6d2" stroke="#000" stroke-width="1.5"/>
+    <path d="M406,235 L393,260 L393,290 L418,282 Z" fill="#f0e6d2" stroke="#000" stroke-width="1.5"/>
+    <path d="M381,235 L397,235 L393,275 L387,280 L381,275 Z" fill="#c1272d" stroke="#000" stroke-width="1.5"/>
+    <!-- Руки вверх -->
+    <path d="M348,245 L305,195 L295,205 L340,255 Z" fill="#f0e6d2" stroke="#000" stroke-width="2.5"/>
+    <ellipse cx="305" cy="200" rx="10" ry="9" fill="#e8c8a0" stroke="#000" stroke-width="2"/>
+    <path d="M430,245 L473,195 L483,205 L438,255 Z" fill="#f0e6d2" stroke="#000" stroke-width="2.5"/>
+    <ellipse cx="473" cy="200" rx="10" ry="9" fill="#e8c8a0" stroke="#000" stroke-width="2"/>
+    <!-- Голова -->
+    <ellipse cx="390" cy="200" rx="30" ry="34" fill="#e8c8a0" stroke="#000" stroke-width="3"/>
+    <path d="M365,192 Q362,175 370,166 Q367,156 377,156 Q381,146 391,153 Q397,144 406,153 Q413,150 417,163 Q425,170 422,182 Q423,196 414,200 L365,200 Z" fill="#1a0f0a" stroke="#000" stroke-width="2.5"/>
+    <circle cx="378" cy="200" r="9" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="2"/>
+    <circle cx="402" cy="200" r="9" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="2"/>
+    <ellipse cx="378" cy="202" rx="5" ry="6" fill="#fff" stroke="#000" stroke-width="1.5"/>
+    <ellipse cx="402" cy="202" rx="5" ry="6" fill="#fff" stroke="#000" stroke-width="1.5"/>
+    <circle cx="379" cy="202" r="1.5" fill="#1a0a0a"/>
+    <circle cx="403" cy="202" r="1.5" fill="#1a0a0a"/>
+    <ellipse cx="390" cy="222" rx="6" ry="8" fill="#4a0a0a" stroke="#000" stroke-width="1.5"/>
+  </g>
+
+  <!-- Летящий велосипед -->
+  <g id="flying_bike" transform="rotate(-25 280 200)">
+    <circle cx="240" cy="200" r="22" fill="none" stroke="#1a1a1a" stroke-width="3"/>
+    <circle cx="240" cy="200" r="20" fill="none" stroke="#c0c0c0" stroke-width="1"/>
+    <circle cx="320" cy="200" r="22" fill="none" stroke="#1a1a1a" stroke-width="3"/>
+    <circle cx="320" cy="200" r="20" fill="none" stroke="#c0c0c0" stroke-width="1"/>
+    <path d="M240,200 L260,175 L300,175 L320,200 L280,200 L260,175" stroke="#a06a3a" stroke-width="3" fill="none"/>
+    <path d="M260,175 L255,165 L270,165" stroke="#888" stroke-width="2" fill="none"/>
+    <path d="M240,200 L245,180 L235,180" stroke="#888" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Траектория полёта (пунктир) -->
+  <path d="M350,240 Q310,180 230,190" stroke="#f4c430" stroke-width="2" stroke-dasharray="6,4" fill="none" opacity="0.8"/>
+
+  <!-- Ещё 2 летящих велосипеда на фоне -->
+  <g transform="rotate(15 550 170)">
+    <circle cx="530" cy="170" r="14" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <circle cx="580" cy="170" r="14" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <path d="M530,170 L550,155 L565,155 L580,170" stroke="#a06a3a" stroke-width="2" fill="none"/>
+  </g>
+  <g transform="rotate(-15 480 130)">
+    <circle cx="460" cy="130" r="12" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <circle cx="500" cy="130" r="12" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <path d="M460,130 L475,120 L485,120 L500,130" stroke="#a06a3a" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Восклицания -->
+  <text x="280" y="120" font-size="22" font-weight="bold" fill="#f4c430" stroke="#000" stroke-width="1" font-family="Arial Black">ソレッ!</text>
+  <text x="520" y="90" font-size="18" font-weight="bold" fill="#f4c430" stroke="#000" stroke-width="1" font-family="Arial Black">ドン!</text>
+  <text x="400" y="140" font-size="16" font-weight="bold" fill="#c1272d" stroke="#000" stroke-width="1" font-family="Arial Black">ガシャン!</text>
+</svg>

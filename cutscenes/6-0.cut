@@ -1,0 +1,106 @@
+<!--
+  Yóu Lóng Tanks — катсцена 6-0.cut
+  Назначение: перед уровнем 6
+  Размер SVG: viewBox="0 0 800 400" (не менять)
+  Палитра: фон #1a0a0a, красный #c1272d, золотой #f4c430, крем #f0e6d2
+  Шрифты: "Noto Serif SC" (RU+CN), "Arial Black" (заголовки)
+  Блок <metadata> внизу — НЕ удалять (реплики диалога в JSON).
+  Рисуй что угодно внутри <svg>, кроме <metadata>.
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" preserveAspectRatio="xMidYMid meet" shape-rendering="geometricPrecision">
+<metadata>
+{
+  "title": "Штаб",
+  "lines": [
+    {
+      "speaker": "学生",
+      "text": "Строим штаб! Тащим всё!"
+    },
+    {
+      "speaker": "指挥官",
+      "text": "Не проедем легко."
+    }
+  ]
+}
+</metadata>
+
+  <rect width="800" height="400" fill="#0a0808"/>
+  <rect x="0" y="0" width="800" height="240" fill="#1a0a12"/>
+  <rect x="0" y="200" width="800" height="40" fill="#2a1a1a"/>
+  <rect x="0" y="235" width="800" height="165" fill="#2a1a10"/>
+  <rect x="0" y="235" width="800" height="3" fill="#5a3a2a"/>
+  <circle cx="680" cy="60" r="38" fill="#e8c060" stroke="#000" stroke-width="3"/>
+  <circle cx="695" cy="55" r="30" fill="#1a0a12" opacity="0.4"/>
+  <circle cx="120" cy="40" r="2" fill="#fff" opacity="0.6"/>
+
+  <!-- Большая баррикада поперёк улицы -->
+  <g>
+    <rect x="100" y="300" width="600" height="20" fill="#6a3a1a" stroke="#000" stroke-width="3"/>
+    <rect x="110" y="320" width="580" height="12" fill="#4a2a0a" stroke="#000" stroke-width="2"/>
+    <rect x="80" y="290" width="40" height="40" fill="#5a5a5a" stroke="#000" stroke-width="2"/>
+    <ellipse cx="100" cy="290" rx="20" ry="5" fill="#3a3a3a" stroke="#000" stroke-width="1.5"/>
+    <rect x="700" y="280" width="50" height="50" fill="#8a5a2a" stroke="#000" stroke-width="2"/>
+    <circle cx="710" cy="290" r="6" fill="#1a1a1a"/>
+    <circle cx="740" cy="290" r="6" fill="#1a1a1a"/>
+    <circle cx="710" cy="310" r="6" fill="#1a1a1a"/>
+    <circle cx="740" cy="310" r="6" fill="#1a1a1a"/>
+    <path d="M150,280 L400,250 L650,280" stroke="#8a5a2a" stroke-width="4" fill="none"/>
+    <path d="M180,290 L400,260 L620,290" stroke="#6a3a1a" stroke-width="3" fill="none"/>
+    <circle cx="400" cy="275" r="20" fill="#5a5a5a" stroke="#000" stroke-width="2.5"/>
+    <circle cx="400" cy="275" r="14" fill="#3a3a3a" stroke="#000" stroke-width="1.5"/>
+    <path d="M320,280 L340,270 L350,282 L340,295 L320,290 Z" fill="#8a5a2a" stroke="#000" stroke-width="2"/>
+    <path d="M450,280 L480,265 L495,285 L470,295 L450,290 Z" fill="#8a5a2a" stroke="#000" stroke-width="2"/>
+    <!-- Плакат "ШТАБ" -->
+    <rect x="350" y="220" width="100" height="30" fill="#c1272d" stroke="#000" stroke-width="2"/>
+    <text x="400" y="242" font-size="18" font-weight="bold" fill="#f4c430" text-anchor="middle" font-family="Arial Black">本部</text>
+    <path d="M350,235 L330,235 M450,235 L470,235" stroke="#8a5a2a" stroke-width="3"/>
+  </g>
+
+  <!-- Студенты тащат доски, урны -->
+  <g>
+    <!-- 1: тащит урну -->
+    <path d="M60,370 L75,370 L75,395 L55,395 Z" fill="#2a2a3a" stroke="#000" stroke-width="2"/>
+    <path d="M80,370 L95,370 L100,395 L82,395 Z" fill="#2a2a3a" stroke="#000" stroke-width="2"/>
+    <path d="M52,320 L100,320 L108,365 L48,365 Z" fill="#f0e6d2" stroke="#000" stroke-width="2"/>
+    <ellipse cx="76" cy="290" rx="22" ry="26" fill="#e8c8a0" stroke="#000" stroke-width="2.5"/>
+    <path d="M56,282 Q54,270 60,264 Q58,256 64,258 Q68,250 74,258 Q80,256 82,266 Q88,272 82,282 L56,282 Z" fill="#1a0f0a" stroke="#000" stroke-width="2"/>
+    <circle cx="66" cy="290" r="6" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="1.5"/>
+    <circle cx="86" cy="290" r="6" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="1.5"/>
+    <circle cx="67" cy="291" r="1.3" fill="#1a0a0a"/>
+    <circle cx="87" cy="291" r="1.3" fill="#1a0a0a"/>
+    <!-- Урна в руках -->
+    <rect x="20" y="300" width="28" height="40" fill="#5a5a5a" stroke="#000" stroke-width="2"/>
+    <ellipse cx="34" cy="300" rx="14" ry="4" fill="#3a3a3a" stroke="#000" stroke-width="1.5"/>
+    <path d="M52,340 L35,330" stroke="#f0e6d2" stroke-width="2.5"/>
+
+    <!-- 2: тащит скамейку -->
+    <path d="M180,370 L195,370 L195,395 L175,395 Z" fill="#2a2a3a" stroke="#000" stroke-width="2"/>
+    <path d="M200,370 L215,370 L220,395 L202,395 Z" fill="#2a2a3a" stroke="#000" stroke-width="2"/>
+    <path d="M172,320 L220,320 L228,365 L168,365 Z" fill="#f0e6d2" stroke="#000" stroke-width="2"/>
+    <ellipse cx="196" cy="290" rx="22" ry="26" fill="#e8c8a0" stroke="#000" stroke-width="2.5"/>
+    <path d="M176,282 Q174,270 180,264 Q178,256 184,258 Q188,250 194,258 Q200,256 202,266 Q208,272 202,282 L176,282 Z" fill="#1a0f0a" stroke="#000" stroke-width="2"/>
+    <circle cx="186" cy="290" r="6" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="1.5"/>
+    <circle cx="206" cy="290" r="6" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="1.5"/>
+    <circle cx="187" cy="291" r="1.3" fill="#1a0a0a"/>
+    <circle cx="207" cy="291" r="1.3" fill="#1a0a0a"/>
+    <!-- Скамейка -->
+    <rect x="130" y="300" width="60" height="10" fill="#8a5a2a" stroke="#000" stroke-width="2"/>
+    <rect x="135" y="310" width="50" height="6" fill="#6a3a1a" stroke="#000" stroke-width="1.5"/>
+    <path d="M170,340 L160,330" stroke="#f0e6d2" stroke-width="2.5"/>
+  </g>
+
+  <!-- Танки вдали -->
+  <g opacity="0.55" fill="#1a1a1a" stroke="#000">
+    <path d="M580,290 L680,290 L690,310 L570,310 Z" stroke-width="3"/>
+    <path d="M600,265 L660,265 L680,290 L590,290 Z" stroke-width="3"/>
+    <path d="M610,250 L630,250 L640,265 L605,265 Z" stroke-width="2.5"/>
+    <circle cx="605" cy="305" r="6" fill="#3a3a3a"/>
+    <circle cx="640" cy="305" r="6" fill="#3a3a3a"/>
+    <circle cx="675" cy="305" r="6" fill="#3a3a3a"/>
+  </g>
+
+  <!-- Восклицания -->
+  <text x="280" y="200" font-size="18" font-weight="bold" fill="#f4c430" stroke="#000" stroke-width="1" font-family="Arial Black">バリケード作ろう!</text>
+  <text x="530" y="180" font-size="16" font-weight="bold" fill="#f4c430" stroke="#000" stroke-width="1" font-family="Arial Black">ここを守る!</text>
+</svg>
