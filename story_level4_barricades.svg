@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" preserveAspectRatio="xMidYMid meet" shape-rendering="geometricPrecision">
+  <rect width="800" height="400" fill="#0a0808"/>
+  <rect x="0" y="0" width="800" height="240" fill="#1a0a12"/>
+  <rect x="0" y="200" width="800" height="40" fill="#2a1a1a"/>
+  <rect x="0" y="235" width="800" height="165" fill="#2a1a10"/>
+  <circle cx="680" cy="60" r="38" fill="#e8c060" stroke="#000" stroke-width="3"/>
+  <circle cx="695" cy="55" r="30" fill="#1a0a12" opacity="0.4"/>
+  <circle cx="120" cy="40" r="2" fill="#fff" opacity="0.6"/>
+
+  <!-- Баррикада (центр) -->
+  <g id="barricade">
+    <!-- Старая шина -->
+    <ellipse cx="400" cy="355" rx="28" ry="14" fill="#1a1a1a" stroke="#000" stroke-width="3"/>
+    <ellipse cx="400" cy="352" rx="20" ry="8" fill="#3a3a3a" stroke="#000" stroke-width="2"/>
+    <!-- Скамейка сверху -->
+    <rect x="350" y="320" width="110" height="10" fill="#8a5a2a" stroke="#000" stroke-width="2.5"/>
+    <rect x="355" y="330" width="100" height="6" fill="#6a3a1a" stroke="#000" stroke-width="2"/>
+    <rect x="365" y="332" width="6" height="22" fill="#5a2a0a" stroke="#000" stroke-width="2"/>
+    <rect x="440" y="332" width="6" height="22" fill="#5a2a0a" stroke="#000" stroke-width="2"/>
+    <!-- Урна -->
+    <rect x="470" y="305" width="30" height="40" fill="#5a5a5a" stroke="#000" stroke-width="2.5"/>
+    <ellipse cx="485" cy="305" rx="15" ry="4" fill="#3a3a3a" stroke="#000" stroke-width="2"/>
+    <path d="M475,315 L495,315 M475,325 L495,325 M475,335 L495,335" stroke="#3a3a3a" stroke-width="1.5"/>
+    <!-- Велосипед сбоку -->
+    <circle cx="325" cy="340" r="16" fill="none" stroke="#1a1a1a" stroke-width="3"/>
+    <circle cx="355" cy="340" r="16" fill="none" stroke="#1a1a1a" stroke-width="3"/>
+    <path d="M325,340 L340,320 L355,340" stroke="#a06a3a" stroke-width="2.5" fill="none"/>
+    <!-- Плакат -->
+    <rect x="365" y="285" width="80" height="30" fill="#f0e6d2" stroke="#000" stroke-width="2"/>
+    <text x="405" y="305" font-size="12" font-weight="bold" fill="#c1272d" text-anchor="middle" font-family="Arial Black">死死</text>
+    <!-- Доски -->
+    <path d="M340,340 L400,310 L460,340" stroke="#8a5a2a" stroke-width="3" fill="none"/>
+    <path d="M355,350 L405,320 L455,350" stroke="#6a3a1a" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Студент тащит урну (слева, от нижнего края) -->
+  <g id="carrier">
+    <ellipse cx="200" cy="372" rx="30" ry="5" fill="#0a0a0a" opacity="0.6"/>
+    <!-- Ноги -->
+    <path d="M180,320 L200,320 L198,368 L175,370 Z" fill="#2a2a3a" stroke="#000" stroke-width="2.5"/>
+    <path d="M205,320 L225,320 L233,365 L210,370 Z" fill="#2a2a3a" stroke="#000" stroke-width="2.5"/>
+    <!-- Туловище -->
+    <path d="M173,280 L231,280 L239,325 L168,325 Z" fill="#f0e6d2" stroke="#000" stroke-width="2.5"/>
+    <!-- Пиджак -->
+    <path d="M163,235 L245,235 L257,285 L171,285 Z" fill="#f0e6d2" stroke="#000" stroke-width="3"/>
+    <path d="M187,235 L200,260 L200,290 L181,282 Z" fill="#f0e6d2" stroke="#000" stroke-width="1.5"/>
+    <path d="M221,235 L208,260 L208,290 L233,282 Z" fill="#f0e6d2" stroke="#000" stroke-width="1.5"/>
+    <path d="M196,235 L212,235 L208,275 L202,280 L196,275 Z" fill="#c1272d" stroke="#000" stroke-width="1.5"/>
+    <!-- Руки: держит урну -->
+    <path d="M163,250 L120,265 L115,275 L155,268 Z" fill="#f0e6d2" stroke="#000" stroke-width="2.5"/>
+    <path d="M245,250 L285,265 L290,275 L250,268 Z" fill="#f0e6d2" stroke="#000" stroke-width="2.5"/>
+    <!-- Урна в руках (перед ним) -->
+    <rect x="95" y="265" width="26" height="38" fill="#5a5a5a" stroke="#000" stroke-width="2.5"/>
+    <ellipse cx="108" cy="265" rx="13" ry="4" fill="#3a3a3a" stroke="#000" stroke-width="2"/>
+    <path d="M100,275 L116,275 M100,285 L116,285 M100,295 L116,295" stroke="#3a3a3a" stroke-width="1.5"/>
+    <!-- Голова -->
+    <ellipse cx="204" cy="200" rx="30" ry="34" fill="#e8c8a0" stroke="#000" stroke-width="3"/>
+    <path d="M179,192 Q176,175 184,166 Q181,156 191,156 Q195,146 205,153 Q211,144 220,153 Q227,150 231,163 Q239,170 236,182 Q237,196 228,200 L179,200 Z" fill="#1a0f0a" stroke="#000" stroke-width="2.5"/>
+    <circle cx="192" cy="200" r="9" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="2"/>
+    <circle cx="216" cy="200" r="9" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="2"/>
+    <ellipse cx="192" cy="202" rx="5" ry="6" fill="#fff" stroke="#000" stroke-width="1.5"/>
+    <ellipse cx="216" cy="202" rx="5" ry="6" fill="#fff" stroke="#000" stroke-width="1.5"/>
+    <circle cx="193" cy="202" r="1.5" fill="#1a0a0a"/>
+    <circle cx="217" cy="202" r="1.5" fill="#1a0a0a"/>
+    <ellipse cx="204" cy="220" rx="6" ry="4" fill="#4a0a0a" stroke="#000" stroke-width="1.5"/>
+  </g>
+
+  <!-- Танк справа (уже не пройдёт) -->
+  <g id="tank_right" opacity="0.85">
+    <path d="M520,320 L740,320 L750,360 L510,360 Z" fill="#1a1a1a" stroke="#000" stroke-width="4"/>
+    <circle cx="545" cy="340" r="12" fill="#3a3a3a" stroke="#000" stroke-width="2.5"/>
+    <circle cx="585" cy="340" r="12" fill="#3a3a3a" stroke="#000" stroke-width="2.5"/>
+    <circle cx="625" cy="340" r="12" fill="#3a3a3a" stroke="#000" stroke-width="2.5"/>
+    <circle cx="665" cy="340" r="12" fill="#3a3a3a" stroke="#000" stroke-width="2.5"/>
+    <circle cx="705" cy="340" r="12" fill="#3a3a3a" stroke="#000" stroke-width="2.5"/>
+    <path d="M535,265 L715,265 L730,320 L525,320 Z" fill="#5a7a3a" stroke="#000" stroke-width="3"/>
+    <path d="M570,220 L665,220 L680,265 L560,265 Z" fill="#5a7a3a" stroke="#000" stroke-width="3"/>
+    <ellipse cx="620" cy="215" rx="28" ry="8" fill="#0a0a0a" stroke="#000" stroke-width="2"/>
+    <path d="M545,235 L495,235 L495,245 L545,245 Z" fill="#4a5a3a" stroke="#000" stroke-width="3"/>
+    <!-- Командир -->
+    <ellipse cx="620" cy="200" rx="14" ry="16" fill="#e8c8a0" stroke="#000" stroke-width="2.5"/>
+    <path d="M608,192 Q605,180 612,175 Q608,170 618,170 Q623,165 632,170 Q638,170 637,180 Q642,188 632,194 L608,194 Z" fill="#c1272d" stroke="#000" stroke-width="2"/>
+    <circle cx="614" cy="200" r="1.5" fill="#1a0a0a"/>
+    <circle cx="626" cy="200" r="1.5" fill="#1a0a0a"/>
+  </g>
+
+  <!-- Другие студенты тащат предметы -->
+  <g opacity="0.7">
+    <!-- Слева дальний студент с доской -->
+    <path d="M80,290 L85,290 L85,315 L78,317 Z" fill="#2a2a3a" stroke="#000" stroke-width="1.5"/>
+    <path d="M88,290 L95,290 L99,315 L88,317 Z" fill="#2a2a3a" stroke="#000" stroke-width="1.5"/>
+    <path d="M74,255 L100,255 L105,295 L70,295 Z" fill="#f0e6d2" stroke="#000" stroke-width="1.5"/>
+    <ellipse cx="88" cy="240" rx="14" ry="17" fill="#e8c8a0" stroke="#000" stroke-width="2"/>
+    <path d="M76,235 Q74,225 80,222 Q78,216 84,218 Q88,212 94,218 Q100,216 102,224 Q106,230 100,236 L76,236 Z" fill="#1a0f0a" stroke="#000" stroke-width="1.5"/>
+    <circle cx="82" cy="240" r="4" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="1"/>
+    <circle cx="94" cy="240" r="4" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="1"/>
+    <circle cx="83" cy="241" r="1" fill="#1a0a0a"/>
+    <circle cx="95" cy="241" r="1" fill="#1a0a0a"/>
+    <!-- Доска в руках -->
+    <path d="M50,250 L110,240 L112,248 L52,258 Z" fill="#8a5a2a" stroke="#000" stroke-width="1.5"/>
+  </g>
+  <g opacity="0.7">
+    <!-- Справа дальний студент с покрышкой -->
+    <path d="M460,295 L465,295 L465,320 L458,322 Z" fill="#2a2a3a" stroke="#000" stroke-width="1.5"/>
+    <path d="M468,295 L475,295 L479,320 L468,322 Z" fill="#2a2a3a" stroke="#000" stroke-width="1.5"/>
+    <path d="M454,260 L480,260 L485,300 L450,300 Z" fill="#f0e6d2" stroke="#000" stroke-width="1.5"/>
+    <ellipse cx="468" cy="245" rx="14" ry="17" fill="#e8c8a0" stroke="#000" stroke-width="2"/>
+    <path d="M456,240 Q454,230 460,227 Q458,221 464,223 Q468,217 474,223 Q480,221 482,229 Q486,235 480,241 L456,241 Z" fill="#1a0f0a" stroke="#000" stroke-width="1.5"/>
+    <circle cx="462" cy="245" r="4" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="1"/>
+    <circle cx="474" cy="245" r="4" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="1"/>
+    <circle cx="463" cy="246" r="1" fill="#1a0a0a"/>
+    <circle cx="475" cy="246" r="1" fill="#1a0a0a"/>
+    <!-- Покрышка -->
+    <circle cx="468" cy="245" r="0" fill="none"/>
+    <ellipse cx="468" cy="290" rx="22" ry="10" fill="#1a1a1a" stroke="#000" stroke-width="2"/>
+    <ellipse cx="468" cy="290" rx="14" ry="5" fill="#f0e6d2"/>
+  </g>
+
+  <!-- Вопросы/восклицания -->
+  <text x="425" y="270" font-size="20" font-weight="bold" fill="#f4c430" stroke="#000" stroke-width="1" font-family="Arial Black">バリケード!</text>
+  <text x="290" y="250" font-size="18" font-weight="bold" fill="#f4c430" stroke="#000" stroke-width="1" font-family="Arial Black">もっと!</text>
+</svg>

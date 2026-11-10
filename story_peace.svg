@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" preserveAspectRatio="xMidYMid meet" shape-rendering="geometricPrecision">
+  <!-- Фон: небо + пагода + площадь -->
+  <defs>
+    <linearGradient id="skyP" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8c860"/>
+      <stop offset="0.5" stop-color="#f4a040"/>
+      <stop offset="1" stop-color="#c86030"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#skyP)"/>
+  <circle cx="650" cy="80" r="48" fill="#fff4c0" opacity="0.9"/>
+  <circle cx="650" cy="80" r="62" fill="#fff4c0" opacity="0.3"/>
+
+  <!-- Пагода на фоне -->
+  <g opacity="0.85">
+    <rect x="580" y="250" width="120" height="60" fill="#8a2a2a" stroke="#1a0a0a" stroke-width="3"/>
+    <path d="M560,250 L720,250 L690,220 L590,220 Z" fill="#c1272d" stroke="#1a0a0a" stroke-width="3"/>
+    <rect x="610" y="200" width="60" height="20" fill="#8a2a2a" stroke="#1a0a0a" stroke-width="3"/>
+    <path d="M595,200 L685,200 L665,175 L615,175 Z" fill="#c1272d" stroke="#1a0a0a" stroke-width="3"/>
+    <rect x="625" y="160" width="30" height="15" fill="#8a2a2a" stroke="#1a0a0a" stroke-width="3"/>
+    <path d="M615,160 L665,160 L650,140 L630,140 Z" fill="#c1272d" stroke="#1a0a0a" stroke-width="3"/>
+    <line x1="640" y1="140" x2="640" y2="125" stroke="#1a0a0a" stroke-width="3"/>
+    <circle cx="640" cy="122" r="5" fill="#f4c430"/>
+  </g>
+
+  <!-- Площадь (земля) -->
+  <rect x="0" y="300" width="800" height="100" fill="#5a4a3a"/>
+  <rect x="0" y="300" width="800" height="4" fill="#8a7a5a"/>
+
+  <!-- Обнимающиеся фигуры: солдат и студент -->
+  <!-- Солдат 1 (слева) -->
+  <g>
+    <ellipse cx="280" cy="345" rx="26" ry="6" fill="#1a0a0a" opacity="0.35"/>
+    <rect x="268" y="280" width="24" height="60" fill="#3a5a3a" stroke="#000" stroke-width="2"/>
+    <rect x="272" y="340" width="8" height="16" fill="#1a1a1a" stroke="#000" stroke-width="2"/>
+    <rect x="282" y="340" width="8" height="16" fill="#1a1a1a" stroke="#000" stroke-width="2"/>
+    <circle cx="280" cy="268" r="14" fill="#e8c8a0" stroke="#000" stroke-width="2"/>
+    <path d="M264,264 Q280,250 296,264 Q296,256 280,254 Q264,256 264,264 Z" fill="#3a5a3a" stroke="#000" stroke-width="2"/>
+    <circle cx="275" cy="266" r="1.5" fill="#000"/>
+    <circle cx="285" cy="266" r="1.5" fill="#000"/>
+    <path d="M274,274 Q280,278 286,274" fill="none" stroke="#000" stroke-width="1.5"/>
+    <!-- рука обнимает -->
+    <path d="M290,295 Q320,285 340,300" fill="none" stroke="#e8c8a0" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Студент 1 (справа от солдата, обнимаются) -->
+  <g>
+    <ellipse cx="330" cy="345" rx="26" ry="6" fill="#1a0a0a" opacity="0.35"/>
+    <rect x="318" y="280" width="24" height="60" fill="#f0e6d2" stroke="#000" stroke-width="2"/>
+    <rect x="320" y="300" width="20" height="6" fill="#c1272d"/>
+    <rect x="322" y="340" width="8" height="16" fill="#2a2a3a" stroke="#000" stroke-width="2"/>
+    <rect x="332" y="340" width="8" height="16" fill="#2a2a3a" stroke="#000" stroke-width="2"/>
+    <circle cx="330" cy="268" r="14" fill="#e8c8a0" stroke="#000" stroke-width="2"/>
+    <path d="M314,264 Q330,246 346,264 Q340,255 330,252 Q320,255 314,264 Z" fill="#3a2a1a" stroke="#000" stroke-width="2"/>
+    <circle cx="325" cy="266" r="1.5" fill="#000"/>
+    <circle cx="335" cy="266" r="1.5" fill="#000"/>
+    <path d="M324,274 Q330,280 336,274" fill="none" stroke="#000" stroke-width="1.5"/>
+    <!-- рука обнимает солдата -->
+    <path d="M320,295 Q295,285 275,300" fill="none" stroke="#e8c8a0" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Сердечко между ними -->
+  <path d="M305,240 C305,232 315,232 315,240 C315,232 325,232 325,240 C325,250 315,258 315,258 C315,258 305,250 305,240 Z" fill="#c1272d" stroke="#000" stroke-width="2"/>
+
+  <!-- Солдат 2 на танке (справа) -->
+  <g>
+    <!-- Танк -->
+    <rect x="480" y="300" width="140" height="40" rx="4" fill="#3a4a3a" stroke="#000" stroke-width="3"/>
+    <rect x="500" y="280" width="60" height="20" fill="#4a5a4a" stroke="#000" stroke-width="3"/>
+    <rect x="540" y="272" width="40" height="10" fill="#4a5a4a" stroke="#000" stroke-width="2"/>
+    <rect x="620" y="288" width="40" height="8" fill="#2a3a2a" stroke="#000" stroke-width="2"/>
+    <!-- колесо -->
+    <circle cx="500" cy="345" r="12" fill="#1a1a1a" stroke="#000" stroke-width="2"/>
+    <circle cx="530" cy="345" r="12" fill="#1a1a1a" stroke="#000" stroke-width="2"/>
+    <circle cx="560" cy="345" r="12" fill="#1a1a1a" stroke="#000" stroke-width="2"/>
+    <circle cx="590" cy="345" r="12" fill="#1a1a1a" stroke="#000" stroke-width="2"/>
+    <circle cx="620" cy="345" r="12" fill="#1a1a1a" stroke="#000" stroke-width="2"/>
+    <!-- Солдат на танке -->
+    <rect x="520" y="240" width="24" height="40" fill="#3a5a3a" stroke="#000" stroke-width="2"/>
+    <circle cx="532" cy="228" r="12" fill="#e8c8a0" stroke="#000" stroke-width="2"/>
+    <path d="M518,225 Q532,213 546,225 Q544,218 532,216 Q520,218 518,225 Z" fill="#3a5a3a" stroke="#000" stroke-width="2"/>
+    <!-- поднятая рука -->
+    <path d="M548,250 L560,235" fill="none" stroke="#e8c8a0" stroke-width="5" stroke-linecap="round"/>
+    <path d="M560,232 L562,222" fill="none" stroke="#e8c8a0" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="546" cy="232" r="1.5" fill="#000"/>
+    <circle cx="538" cy="232" r="1.5" fill="#000"/>
+    <path d="M526,236 Q532,240 540,236" fill="none" stroke="#000" stroke-width="1.5"/>
+  </g>
+
+  <!-- Студент 2 на танке (обнимает солдата) -->
+  <g>
+    <rect x="575" y="240" width="24" height="40" fill="#f0e6d2" stroke="#000" stroke-width="2"/>
+    <rect x="577" y="258" width="20" height="5" fill="#c1272d"/>
+    <rect x="575" y="280" width="24" height="20" fill="#2a2a3a"/>
+    <circle cx="587" cy="228" r="12" fill="#e8c8a0" stroke="#000" stroke-width="2"/>
+    <path d="M573,225 Q587,210 601,225 Q598,215 587,212 Q576,215 573,225 Z" fill="#3a2a1a" stroke="#000" stroke-width="2"/>
+    <circle cx="583" cy="232" r="1.5" fill="#000"/>
+    <circle cx="591" cy="232" r="1.5" fill="#000"/>
+    <path d="M583,238 Q587,242 591,238" fill="none" stroke="#000" stroke-width="1.5"/>
+    <!-- рука обнимает -->
+    <path d="M575,250 Q560,245 550,255" fill="none" stroke="#e8c8a0" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Флажки и ленточки -->
+  <g>
+    <line x1="100" y1="200" x2="100" y2="300" stroke="#1a0a0a" stroke-width="3"/>
+    <path d="M100,200 L140,210 L100,225 Z" fill="#c1272d" stroke="#000" stroke-width="2"/>
+  </g>
+  <g>
+    <line x1="180" y1="180" x2="180" y2="300" stroke="#1a0a0a" stroke-width="3"/>
+    <path d="M180,180 L220,190 L180,205 Z" fill="#f4c430" stroke="#000" stroke-width="2"/>
+  </g>
+
+  <!-- Конфетти -->
+  <circle cx="150" cy="120" r="4" fill="#c1272d"/>
+  <circle cx="200" cy="90" r="3" fill="#f4c430"/>
+  <circle cx="250" cy="140" r="4" fill="#fff"/>
+  <circle cx="380" cy="100" r="3" fill="#c1272d"/>
+  <circle cx="420" cy="150" r="4" fill="#f4c430"/>
+  <circle cx="480" cy="110" r="3" fill="#fff"/>
+  <circle cx="560" cy="130" r="4" fill="#c1272d"/>
+  <circle cx="680" cy="170" r="3" fill="#f4c430"/>
+
+  <!-- Заголовок "和平 · МИР · PEACE" -->
+  <text x="400" y="60" font-size="42" font-weight="bold" fill="#1a0a0a" text-anchor="middle" font-family="Arial Black, sans-serif" stroke="#fff4c0" stroke-width="2" paint-order="stroke">和平 · МИР · PEACE</text>
+  <text x="400" y="92" font-size="16" fill="#1a0a0a" text-anchor="middle" font-family="Arial, sans-serif">Студенты и военные обнимаются на площади</text>
+</svg>

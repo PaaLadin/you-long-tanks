@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>游龙戏珠 — Dragon Column</title>
+<link rel="stylesheet" href="style_v12.css?v=20261110014612">
+</head>
+<body>
+<div id="app">
+  <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+  <div id="title-screen" class="screen visible">
+    <h1 class="game-title">游龙戏珠</h1>
+    <p class="subtitle">Dragon Column</p>
+    <div class="btn-group">
+      <button id="btn-start" class="btn primary">开始 Start</button>
+      <button id="btn-settings" class="btn">设置 Settings</button>
+      <button id="btn-highscores" class="btn">高分 Highscores</button>
+      <button id="btn-help" class="btn">帮助 Help</button>
+    </div>
+    <p class="version">v1.0</p>
+  </div>
+
+  <div id="help-screen" class="screen">
+    <h2>帮助 How to Play</h2>
+    <ul class="help-list">
+      <li>← → или A/D — движение, телепорт через края</li>
+      <li>↑ ↓ или W/S — вертикаль (стена сверху/снизу)</li>
+      <li>Пробел — выстрел (с 5-го уровня)</li>
+      <li>Esc — пауза</li>
+      <li>Тарань человечков — колонна растёт</li>
+      <li>Баррикада — голова застревает, управление переходит второму танку</li>
+      <li>Стены и свои танки — непробиваемы</li>
+    </ul>
+    <button id="btn-help-back" class="btn primary">明白 Got it</button>
+  </div>
+
+  <div id="settings-screen" class="screen">
+    <h2>设置 Settings</h2>
+    <div class="settings-row">
+      <label>音乐 Music</label>
+      <button id="btn-music" class="toggle">ON</button>
+    </div>
+    <div class="settings-row">
+      <label>音效 SFX</label>
+      <button id="btn-sfx" class="toggle">ON</button>
+    </div>
+    <div class="settings-row">
+      <label>主题 Theme</label>
+      <button id="btn-theme" class="toggle">DARK</button>
+    </div>
+    <button id="btn-settings-back" class="btn primary">返回 Back</button>
+  </div>
+
+  <div id="highscores-screen" class="screen">
+    <h2>高分 Highscores</h2>
+    <ol id="highscores-list" class="highscores-list"></ol>
+    <button id="btn-highscores-back" class="btn primary">返回 Back</button>
+  </div>
+
+  <div id="pause-screen" class="screen">
+    <h2>暂停 Paused</h2>
+    <div class="btn-group">
+      <button id="btn-resume" class="btn primary">继续 Resume</button>
+      <button id="btn-restart" class="btn">重来 Restart</button>
+      <button id="btn-quit" class="btn">主菜单 Main Menu</button>
+    </div>
+  </div>
+
+  <div id="gameover-screen" class="screen">
+    <h2>游戏结束 Game Over</h2>
+    <p class="score-label">最终分数 Final Score</p>
+    <p id="final-score" class="final-score">0</p>
+    <p id="new-record" class="new-record hidden">新纪录 NEW RECORD!</p>
+    <div class="btn-group">
+      <button id="btn-play-again" class="btn primary">重来 Play Again</button>
+      <button id="btn-gameover-menu" class="btn">主菜单 Main Menu</button>
+    </div>
+  </div>
+
+
+  <div id="peace-screen" class="screen">
+    <img id="peace-img" class="result-figure peace" src="story_peace.svg" alt="Peace"/>
+    <h2>和平 Victory!</h2>
+    <p class="score-label">Final Score</p>
+    <p id="peace-score" class="final-score">0</p>
+    <div class="btn-group">
+      <button id="btn-peace-again" class="btn primary">重来 Play Again</button>
+      <button id="btn-peace-menu" class="btn">主菜单 Main Menu</button>
+    </div>
+  </div>
+
+  <div id="tribunal-screen" class="screen">
+    <img id="tribunal-img" class="result-figure loss" src="story_tribunal.svg" alt="Court-Martial"/>
+    <h2>军事法庭 Court-Martial</h2>
+    <p class="score-label">Final Score</p>
+    <p id="tribunal-score" class="final-score">0</p>
+    <div class="btn-group">
+      <button id="btn-tribunal-again" class="btn primary">重来 Play Again</button>
+      <button id="btn-tribunal-menu" class="btn">主菜单 Main Menu</button>
+    </div>
+  </div>
+
+
+  <div id="wall-screen" class="screen">
+    <img id="wall-img" class="result-figure loss" src="story_wall_loss.svg" alt="Wall Lockdown"/>
+    <h2>城墙沦陷 · Стена пала</h2>
+    <p class="score-label">Final Score</p>
+    <p id="wall-score" class="final-score">0</p>
+    <div class="btn-group">
+      <button id="btn-wall-again" class="btn primary">重来 Play Again</button>
+      <button id="btn-wall-menu" class="btn">主菜单 Main Menu</button>
+    </div>
+  </div>
+
+  <div id="stage-intro" class="screen">
+    <p id="stage-text" class="stage-text">第一关</p>
+    <p id="stage-goal" class="stage-goal"></p>
+  </div>
+
+  
+</div>
+
+  <div id="story-screen" class="screen">
+    <div class="story-scene-wrap">
+      <img id="story-img" src="story_card1_shop.svg" class="story-scene" alt="Cutscene">
+    </div>
+    <div class="story-dialog">
+      <div class="story-dialog-inner" id="story-text">
+        <!-- заполняется через JS -->
+      </div>
+      <div class="story-controls">
+        <span class="story-progress" id="story-progress">1/4</span>
+        <button id="btn-story-continue" class="btn primary">Далее ▶</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="game_v12.js?v=20261110020115"></script>
+
+<script>
+(function(){
+  function fitApp() {
+    var app = document.getElementById('app');
+    if (!app) return;
+    var w = window.innerWidth, hh = window.innerHeight;
+    var s = Math.min(w / 800, hh / 600, 1);
+    app.style.transform = 'translate(-50%, -50%) scale(' + s.toFixed(4) + ')';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', fitApp);
+  } else {
+    fitApp();
+  }
+  window.addEventListener('resize', fitApp);
+})();
+</script>
+</body>
+</html>

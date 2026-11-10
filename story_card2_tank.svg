@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" preserveAspectRatio="xMidYMid meet" shape-rendering="geometricPrecision">
+  <rect width="800" height="400" fill="#0a0808"/>
+  <rect x="0" y="0" width="800" height="240" fill="#1a0a12"/>
+  <rect x="0" y="200" width="800" height="40" fill="#2a1a1a"/>
+  <rect x="0" y="235" width="800" height="165" fill="#2a1a10"/>
+  <rect x="0" y="235" width="800" height="3" fill="#5a3a2a"/>
+
+  <!-- Луна -->
+  <circle cx="680" cy="60" r="38" fill="#e8c060" stroke="#000" stroke-width="3"/>
+  <circle cx="695" cy="55" r="30" fill="#1a0a12" opacity="0.35"/>
+
+  <!-- Звёзды -->
+  <circle cx="120" cy="40" r="2" fill="#fff" opacity="0.6"/>
+  <circle cx="350" cy="25" r="1.5" fill="#fff" opacity="0.5"/>
+
+  <!-- Магазин на фоне (слева, частично) -->
+  <rect x="-100" y="80" width="300" height="220" fill="#4a3a2a" stroke="#000" stroke-width="4"/>
+  <rect x="-100" y="80" width="300" height="30" fill="#5a2a1a" stroke="#000" stroke-width="4"/>
+  <path d="M-100,80 L200,80 L200,60 L160,40 L140,60 L100,40 L80,60 L40,40 L20,60 L-20,40 L-40,60 L-80,40 L-100,60 Z" fill="#8a1a1a" stroke="#000" stroke-width="4"/>
+  <text x="0" y="110" font-size="18" font-weight="bold" fill="#f4c430" text-anchor="middle" font-family="Arial Black" stroke="#000" stroke-width="1">食品</text>
+  <!-- Дверь, открытая, свет -->
+  <rect x="120" y="180" width="80" height="120" fill="#3a1a0a" stroke="#000" stroke-width="4"/>
+  <path d="M120,180 L100,175 L100,305 L120,300 Z" fill="#f8e0a0" opacity="0.7"/>
+
+  <!-- Танк (справа, приближается) -->
+  <g id="tank2">
+    <!-- Тени -->
+    <path d="M540,290 Q560,270 580,240 Q570,265 545,285 Z" fill="#6a6a6a" opacity="0.4"/>
+
+    <!-- Гусеница -->
+    <path d="M520,340 L790,340 L800,380 L510,380 Z" fill="#1a1a1a" stroke="#000" stroke-width="4"/>
+    <circle cx="555" cy="360" r="16" fill="#3a3a3a" stroke="#000" stroke-width="3"/>
+    <circle cx="605" cy="360" r="16" fill="#3a3a3a" stroke="#000" stroke-width="3"/>
+    <circle cx="655" cy="360" r="16" fill="#3a3a3a" stroke="#000" stroke-width="3"/>
+    <circle cx="705" cy="360" r="16" fill="#3a3a3a" stroke="#000" stroke-width="3"/>
+    <circle cx="755" cy="360" r="16" fill="#3a3a3a" stroke="#000" stroke-width="3"/>
+    <circle cx="555" cy="360" r="6" fill="#5a5a5a"/>
+    <circle cx="605" cy="360" r="6" fill="#5a5a5a"/>
+    <circle cx="655" cy="360" r="6" fill="#5a5a5a"/>
+    <circle cx="705" cy="360" r="6" fill="#5a5a5a"/>
+    <circle cx="755" cy="360" r="6" fill="#5a5a5a"/>
+
+    <!-- Корпус -->
+    <path d="M540,280 L770,280 L790,340 L520,340 Z" fill="#5a7a3a" stroke="#000" stroke-width="4"/>
+    <path d="M540,280 L770,280 L775,300 L540,300 Z" fill="#3a5a2a" opacity="0.6"/>
+    <path d="M560,290 L700,290 L700,293 L560,293 Z" fill="#9aba6a" opacity="0.6"/>
+
+    <!-- Башня -->
+    <path d="M620,220 L750,220 L770,280 L600,280 Z" fill="#5a7a3a" stroke="#000" stroke-width="4"/>
+    <path d="M620,220 L750,220 L755,235 L615,235 Z" fill="#7a9a5a" opacity="0.5"/>
+
+    <!-- Люк -->
+    <ellipse cx="685" cy="215" rx="55" ry="14" fill="#0a0a0a" stroke="#000" stroke-width="3"/>
+    <ellipse cx="750" cy="210" rx="20" ry="6" fill="#3a3a3a" stroke="#000" stroke-width="3"/>
+
+    <!-- Ствол (направлен влево, на студента) -->
+    <path d="M580,235 L440,235 L440,250 L580,250 Z" fill="#4a5a3a" stroke="#000" stroke-width="4"/>
+    <rect x="435" y="230" width="15" height="25" fill="#2a3a2a" stroke="#000" stroke-width="3"/>
+    <path d="M450,238 L580,238 L580,241 L450,241 Z" fill="#7a9a5a" opacity="0.5"/>
+
+    <!-- Дуло-огонь (только что выстрелил) -->
+    <g opacity="0.9">
+      <path d="M435,242 L410,230 L405,235 L420,242 L405,250 L420,247 Z" fill="#f8c040" stroke="#c1272d" stroke-width="2"/>
+      <circle cx="435" cy="242" r="8" fill="#f8e0a0"/>
+      <circle cx="435" cy="242" r="4" fill="#fff"/>
+    </g>
+
+    <!-- Детали башни -->
+    <circle cx="640" cy="260" r="3" fill="#2a3a2a"/>
+    <circle cx="670" cy="260" r="3" fill="#2a3a2a"/>
+    <circle cx="700" cy="260" r="3" fill="#2a3a2a"/>
+
+    <!-- Антенна -->
+    <path d="M720,220 L730,160" stroke="#000" stroke-width="2"/>
+    <circle cx="730" cy="158" r="3" fill="#c1272d"/>
+
+    <!-- Командир в люке (кричит) -->
+    <g id="cmd2">
+      <ellipse cx="685" cy="190" rx="20" ry="22" fill="#e8c8a0" stroke="#000" stroke-width="3"/>
+      <path d="M665,180 Q660,165 668,155 Q663,148 675,148 Q680,138 692,145 Q700,138 708,148 Q718,145 718,158 Q722,170 712,178 L665,178 Z" fill="#c1272d" stroke="#000" stroke-width="2.5"/>
+      <path d="M670,185 L680,188 M700,185 L690,188" stroke="#000" stroke-width="2.5"/>
+      <circle cx="678" cy="188" r="2.5" fill="#1a0a0a"/>
+      <circle cx="694" cy="188" r="2.5" fill="#1a0a0a"/>
+      <path d="M685,195 Q685,205 690,210 Q680,212 685,200 Z" fill="#4a0a0a" stroke="#000" stroke-width="1.5"/>
+      <path d="M675,192 Q685,195 695,192" stroke="#fff" stroke-width="1.5" fill="none"/>
+    </g>
+  </g>
+
+  <!-- Студент (в панике, бежит влево) -->
+  <g id="student2">
+    <ellipse cx="240" cy="375" rx="55" ry="8" fill="#0a0a0a" opacity="0.5"/>
+
+    <!-- Ноги в беге -->
+    <path d="M215,315 L240,315 L238,375 L210,378 Z" fill="#2a2a3a" stroke="#000" stroke-width="3"/>
+    <path d="M245,315 L270,315 L285,370 L255,378 Z" fill="#2a2a3a" stroke="#000" stroke-width="3"/>
+    <path d="M205,368 L240,368 L240,382 L200,382 Z" fill="#1a1a1a" stroke="#000" stroke-width="3"/>
+    <path d="M255,368 L290,368 L292,382 L255,382 Z" fill="#1a1a1a" stroke="#000" stroke-width="3"/>
+
+    <!-- Туловище -->
+    <path d="M210,265 L275,265 L285,320 L200,320 Z" fill="#f0e6d2" stroke="#000" stroke-width="3"/>
+
+    <!-- Пиджак -->
+    <path d="M195,205 L290,205 L305,275 L205,275 Z" fill="#f0e6d2" stroke="#000" stroke-width="4"/>
+    <path d="M225,205 L240,245 L240,280 L215,270 Z" fill="#f0e6d2" stroke="#000" stroke-width="2"/>
+    <path d="M255,205 L240,245 L240,280 L270,270 Z" fill="#f0e6d2" stroke="#000" stroke-width="2"/>
+    <path d="M232,205 L248,205 L244,255 L236,255 Z" fill="#d0e0f0" stroke="#000" stroke-width="2"/>
+    <path d="M236,210 L242,210 L244,250 L240,260 L234,250 Z" fill="#c1272d" stroke="#000" stroke-width="2"/>
+    <!-- Галстук развевается -->
+    <path d="M240,255 Q235,275 245,290 Q250,275 248,258 Z" fill="#c1272d" stroke="#000" stroke-width="2"/>
+
+    <!-- Руки в панике (вверх) -->
+    <path d="M200,215 L160,170 L155,180 L185,225 Z" fill="#f0e6d2" stroke="#000" stroke-width="3"/>
+    <ellipse cx="160" cy="175" rx="11" ry="9" fill="#e8c8a0" stroke="#000" stroke-width="2"/>
+    <path d="M290,215 L330,170 L340,180 L305,225 Z" fill="#f0e6d2" stroke="#000" stroke-width="3"/>
+    <ellipse cx="335" cy="175" rx="11" ry="9" fill="#e8c8a0" stroke="#000" stroke-width="2"/>
+
+    <!-- Голова (ужас) -->
+    <ellipse cx="245" cy="160" rx="38" ry="42" fill="#e8c8a0" stroke="#000" stroke-width="4"/>
+    <path d="M215,150 Q210,128 220,115 Q215,102 228,102 Q233,88 246,98 Q253,85 268,98 Q280,92 282,108 Q295,118 290,135 Q290,152 278,158 L215,158 Z" fill="#1a0f0a" stroke="#000" stroke-width="3"/>
+    <path d="M222,145 L228,140 M232,140 L236,135 M260,140 L266,135 M270,145 L276,140" stroke="#000" stroke-width="1.5"/>
+
+    <!-- Очки слетели (одна дужка) -->
+    <circle cx="232" cy="158" r="11" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="2.5"/>
+    <circle cx="258" cy="158" r="11" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="2.5"/>
+
+    <!-- Широко раскрытые глаза -->
+    <ellipse cx="232" cy="160" rx="6" ry="7" fill="#fff" stroke="#000" stroke-width="2"/>
+    <ellipse cx="258" cy="160" rx="6" ry="7" fill="#fff" stroke="#000" stroke-width="2"/>
+    <circle cx="233" cy="160" r="2" fill="#1a0a0a"/>
+    <circle cx="259" cy="160" r="2" fill="#1a0a0a"/>
+
+    <!-- Рот открыт -->
+    <ellipse cx="245" cy="192" rx="10" ry="13" fill="#4a0a0a" stroke="#000" stroke-width="2.5"/>
+    <ellipse cx="245" cy="194" rx="6" ry="8" fill="#8a2a1a"/>
+
+    <!-- Пот -->
+    <path d="M290,140 Q295,130 292,125 Q285,132 288,140 Z" fill="#7ac8e8" stroke="#000" stroke-width="1.5"/>
+    <path d="M210,150 Q205,142 208,138 Q214,143 212,150 Z" fill="#7ac8e8" stroke="#000" stroke-width="1.5"/>
+  </g>
+
+  <!-- Авоська падает (в воздухе) -->
+  <g id="avoska_falling" transform="rotate(-25 380 300)">
+    <path d="M340,285 Q335,320 355,340 L395,342 Q412,320 408,285 Z" fill="#a0a040" opacity="0.5" stroke="#000" stroke-width="2"/>
+    <path d="M340,290 L408,290 M338,300 L410,300 M337,310 L411,310 M336,320 L412,320 M338,330 L410,330 M345,340 L403,340" stroke="#5a5a2a" stroke-width="1.5" fill="none"/>
+    <path d="M342,290 L346,340 M360,290 L363,342 M380,290 L381,342 M398,290 L396,342 M407,290 L405,340" stroke="#5a5a2a" stroke-width="1.5" fill="none"/>
+    <circle cx="350" cy="302" r="9" fill="#e8a020" stroke="#000" stroke-width="2"/>
+    <circle cx="368" cy="312" r="10" fill="#e8a020" stroke="#000" stroke-width="2"/>
+    <circle cx="386" cy="300" r="9" fill="#e8a020" stroke="#000" stroke-width="2"/>
+    <circle cx="358" cy="325" r="9" fill="#e8a020" stroke="#000" stroke-width="2"/>
+    <circle cx="380" cy="328" r="10" fill="#e8a020" stroke="#000" stroke-width="2"/>
+    <circle cx="398" cy="318" r="8" fill="#e8a020" stroke="#000" stroke-width="2"/>
+    <path d="M343,283 Q340,270 352,270 M404,283 Q407,270 395,270" stroke="#5a3a1a" stroke-width="3" fill="none"/>
+  </g>
+
+  <!-- Апельсины, вылетающие из авоськи -->
+  <circle cx="320" cy="270" r="8" fill="#e8a020" stroke="#000" stroke-width="2"/>
+  <circle cx="305" cy="290" r="7" fill="#e8a020" stroke="#000" stroke-width="2"/>
+  <circle cx="340" cy="255" r="6" fill="#e8a020" stroke="#000" stroke-width="2"/>
+  <path d="M310,260 Q305,255 315,252" stroke="#000" stroke-width="1" fill="none"/>
+  <path d="M300,282 Q295,278 305,275" stroke="#000" stroke-width="1" fill="none"/>
+
+  <!-- Звуковые линии: крик -->
+  <path d="M540,180 Q520,170 500,165 Q520,178 540,185" stroke="#c1272d" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M535,195 Q515,190 495,188 Q515,198 535,200" stroke="#c1272d" stroke-width="2" fill="none" opacity="0.8"/>
+  <text x="510" y="140" font-size="22" font-weight="bold" fill="#f4c430" font-family="Arial Black" stroke="#000" stroke-width="1">チキショー!</text>
+
+  <!-- Восклицательный знак над студентом -->
+  <text x="280" y="100" font-size="32" font-weight="bold" fill="#f4c430" stroke="#000" stroke-width="1.5" font-family="Arial Black">!</text>
+  <text x="300" y="115" font-size="22" font-weight="bold" fill="#f4c430" stroke="#000" stroke-width="1" font-family="Arial Black">!</text>
+
+  <!-- Линии скорости вокруг студента -->
+  <path d="M120,220 L170,220" stroke="#000" stroke-width="2" opacity="0.6"/>
+  <path d="M100,240 L165,240" stroke="#000" stroke-width="2" opacity="0.6"/>
+  <path d="M110,260 L170,260" stroke="#000" stroke-width="2" opacity="0.6"/>
+  <path d="M100,280 L170,280" stroke="#000" stroke-width="2" opacity="0.6"/>
+  <path d="M120,300 L170,300" stroke="#000" stroke-width="2" opacity="0.6"/>
+</svg>

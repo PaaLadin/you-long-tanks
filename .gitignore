@@ -1,0 +1,11 @@
+# backups
+*.bak_*
+_svg_bak_*/
+# build artifacts
+*.zip
+# temp
+*.tmp
+*.log
+# OS
+Thumbs.db
+.DS_Store

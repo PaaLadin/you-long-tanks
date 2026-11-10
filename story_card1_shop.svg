@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" preserveAspectRatio="xMidYMid meet" shape-rendering="geometricPrecision">
+  <rect width="800" height="400" fill="#0a0808"/>
+  <rect x="0" y="0" width="800" height="240" fill="#1a0a12"/>
+  <rect x="0" y="200" width="800" height="40" fill="#2a1a1a"/>
+  <rect x="0" y="235" width="800" height="165" fill="#2a1a10"/>
+  <rect x="0" y="235" width="800" height="3" fill="#5a3a2a"/>
+
+  <!-- Луна -->
+  <circle cx="680" cy="60" r="38" fill="#e8c060" stroke="#000" stroke-width="3"/>
+  <circle cx="695" cy="55" r="30" fill="#1a0a12" opacity="0.35"/>
+
+  <!-- Звёзды -->
+  <circle cx="120" cy="40" r="2" fill="#fff" opacity="0.6"/>
+  <circle cx="350" cy="25" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="550" cy="50" r="2" fill="#fff" opacity="0.7"/>
+
+  <!-- Здание магазина (слева) -->
+  <rect x="20" y="80" width="380" height="220" fill="#4a3a2a" stroke="#000" stroke-width="4"/>
+  <rect x="20" y="80" width="380" height="30" fill="#5a2a1a" stroke="#000" stroke-width="4"/>
+  <path d="M20,80 L400,80 L400,60 L360,40 L340,60 L300,40 L280,60 L240,40 L220,60 L180,40 L160,60 L120,40 L100,60 L60,40 L40,60 L20,60 Z" fill="#8a1a1a" stroke="#000" stroke-width="4"/>
+  <text x="210" y="110" font-size="22" font-weight="bold" fill="#f4c430" text-anchor="middle" font-family="Arial Black, sans-serif" stroke="#000" stroke-width="1">食品</text>
+  <text x="210" y="132" font-size="14" font-weight="bold" fill="#f0e6d2" text-anchor="middle" font-family="Arial, sans-serif" stroke="#000" stroke-width="0.5">МАГАЗИН</text>
+
+  <!-- Дверь -->
+  <rect x="150" y="180" width="100" height="120" fill="#3a1a0a" stroke="#000" stroke-width="4"/>
+  <rect x="155" y="185" width="42" height="115" fill="#5a7a9a" stroke="#000" stroke-width="2" opacity="0.7"/>
+  <rect x="203" y="185" width="42" height="115" fill="#5a7a9a" stroke="#000" stroke-width="2" opacity="0.7"/>
+  <circle cx="195" cy="245" r="3" fill="#f4c430"/>
+  <circle cx="205" cy="245" r="3" fill="#f4c430"/>
+
+  <!-- Окна магазина -->
+  <rect x="50" y="180" width="80" height="80" fill="#5a7a9a" stroke="#000" stroke-width="3"/>
+  <rect x="270" y="180" width="80" height="80" fill="#5a7a9a" stroke="#000" stroke-width="3"/>
+  <line x1="90" y1="180" x2="90" y2="260" stroke="#000" stroke-width="2"/>
+  <line x1="50" y1="220" x2="130" y2="220" stroke="#000" stroke-width="2"/>
+  <line x1="310" y1="180" x2="310" y2="260" stroke="#000" stroke-width="2"/>
+  <line x1="270" y1="220" x2="350" y2="220" stroke="#000" stroke-width="2"/>
+
+  <!-- Афиша -->
+  <rect x="280" y="145" width="90" height="30" fill="#f0e6d2" stroke="#000" stroke-width="2"/>
+  <text x="325" y="162" font-size="10" font-weight="bold" fill="#1a0a0a" text-anchor="middle" font-family="Arial">АКЦИЯ -30%</text>
+
+  <!-- Студент (правый) -->
+  <g id="student1">
+    <ellipse cx="550" cy="375" rx="52" ry="8" fill="#0a0a0a" opacity="0.5"/>
+    <path d="M525,315 L548,315 L550,375 L525,375 Z" fill="#2a2a3a" stroke="#000" stroke-width="3"/>
+    <path d="M555,315 L578,315 L580,375 L555,375 Z" fill="#2a2a3a" stroke="#000" stroke-width="3"/>
+    <path d="M522,372 L552,372 L552,385 L522,385 Z" fill="#1a1a1a" stroke="#000" stroke-width="3"/>
+    <path d="M555,372 L585,372 L585,385 L555,385 Z" fill="#1a1a1a" stroke="#000" stroke-width="3"/>
+    <path d="M522,265 L580,265 L585,320 L520,320 Z" fill="#f0e6d2" stroke="#000" stroke-width="3"/>
+    <path d="M505,205 L600,205 L610,275 L515,275 Z" fill="#f0e6d2" stroke="#000" stroke-width="4"/>
+    <path d="M535,205 L548,240 L548,275 L525,265 Z" fill="#f0e6d2" stroke="#000" stroke-width="2"/>
+    <path d="M570,205 L557,240 L557,275 L580,265 Z" fill="#f0e6d2" stroke="#000" stroke-width="2"/>
+    <path d="M540,205 L560,205 L555,255 L545,255 Z" fill="#d0e0f0" stroke="#000" stroke-width="2"/>
+    <path d="M547,210 L553,210 L555,250 L550,260 L545,250 Z" fill="#c1272d" stroke="#000" stroke-width="2"/>
+    <!-- Рука с авоськой -->
+    <path d="M505,215 L475,275 L490,285 L520,230 Z" fill="#f0e6d2" stroke="#000" stroke-width="3"/>
+    <ellipse cx="485" cy="280" rx="12" ry="9" fill="#e8c8a0" stroke="#000" stroke-width="2"/>
+    <!-- Авоська -->
+    <g id="avoska1">
+      <path d="M450,285 Q445,320 465,340 L505,342 Q522,320 518,285 Z" fill="#a0a040" opacity="0.5" stroke="#000" stroke-width="2"/>
+      <path d="M450,290 L518,290 M448,300 L520,300 M447,310 L521,310 M446,320 L522,320 M448,330 L520,330 M455,340 L513,340" stroke="#5a5a2a" stroke-width="1.5" fill="none"/>
+      <path d="M452,290 L456,340 M470,290 L473,342 M490,290 L491,342 M508,290 L506,342 M517,290 L515,340" stroke="#5a5a2a" stroke-width="1.5" fill="none"/>
+      <circle cx="460" cy="302" r="9" fill="#e8a020" stroke="#000" stroke-width="2"/>
+      <circle cx="478" cy="312" r="10" fill="#e8a020" stroke="#000" stroke-width="2"/>
+      <circle cx="496" cy="300" r="9" fill="#e8a020" stroke="#000" stroke-width="2"/>
+      <circle cx="468" cy="325" r="9" fill="#e8a020" stroke="#000" stroke-width="2"/>
+      <circle cx="490" cy="328" r="10" fill="#e8a020" stroke="#000" stroke-width="2"/>
+      <circle cx="508" cy="318" r="8" fill="#e8a020" stroke="#000" stroke-width="2"/>
+      <path d="M453,283 Q450,270 462,270 M514,283 Q517,270 505,270" stroke="#5a3a1a" stroke-width="3" fill="none"/>
+    </g>
+    <!-- Голова -->
+    <ellipse cx="555" cy="160" rx="38" ry="42" fill="#e8c8a0" stroke="#000" stroke-width="4"/>
+    <path d="M580,160 Q588,178 580,195 Q592,182 588,160 Z" fill="#c8a080" opacity="0.5"/>
+    <path d="M518,150 Q515,128 523,115 Q518,102 530,102 Q535,88 548,98 Q555,85 570,98 Q582,92 585,108 Q598,118 592,135 Q592,152 582,158 L518,158 Z" fill="#1a0f0a" stroke="#000" stroke-width="3"/>
+    <circle cx="542" cy="158" r="11" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="2.5"/>
+    <circle cx="568" cy="158" r="11" fill="#f0e6d2" opacity="0.4" stroke="#000" stroke-width="2.5"/>
+    <path d="M553,158 L557,158" stroke="#000" stroke-width="2.5"/>
+    <path d="M531,158 L520,155" stroke="#000" stroke-width="2.5"/>
+    <path d="M579,158 L592,155" stroke="#000" stroke-width="2.5"/>
+    <ellipse cx="542" cy="160" rx="4" ry="5" fill="#1a1a0a"/>
+    <ellipse cx="568" cy="160" rx="4" ry="5" fill="#1a1a0a"/>
+    <circle cx="543" cy="159" r="1.3" fill="#fff"/>
+    <circle cx="569" cy="159" r="1.3" fill="#fff"/>
+    <path d="M528,138 Q538,130 552,136" stroke="#000" stroke-width="2" fill="none"/>
+    <path d="M558,136 Q572,130 582,138" stroke="#000" stroke-width="2" fill="none"/>
+    <path d="M555,172 L552,182 L558,182 Z" fill="#c8a080" stroke="#000" stroke-width="1.5"/>
+    <ellipse cx="555" cy="194" rx="8" ry="10" fill="#4a0a0a" stroke="#000" stroke-width="2"/>
+    <ellipse cx="555" cy="194" rx="5" ry="6" fill="#8a2a1a"/>
+  </g>
+
+  <!-- Дверь магазина приоткрыта, свет -->
+  <path d="M250,180 L230,180 L230,300 L250,300 Z" fill="#f8e0a0" opacity="0.5"/>
+  <path d="M230,180 L215,175 L215,305 L230,300 Z" fill="#e8c060" opacity="0.3"/>
+
+  <!-- Звуковые линии (звон колокольчика) -->
+  <path d="M280,150 Q270,140 258,145 Q270,148 278,155" stroke="#f4c430" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M290,145 Q282,132 270,138 Q282,140 288,150" stroke="#f4c430" stroke-width="2" fill="none" opacity="0.7"/>
+  <text x="225" y="135" font-size="20" font-weight="bold" fill="#f4c430" font-family="Arial Black" opacity="0.8">キラーン</text>
+</svg>
